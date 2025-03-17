@@ -1,0 +1,12 @@
+restart-times: 0
+executor: cluster-generic
+cluster-generic-submit-cmd: "sbatch --parsable -p {resources.partition} -t {resources.time} -n {resources.cpus} -N 1 --mem={resources.mem_mb} -o workflow/logs/slurm/{rule}/{rule}_{wildcards}.out -e workflow/logs/slurm/{rule}/{rule}_{wildcards}.err --account=grad_lab"
+default-resources: [cpus=1, mem_mb=1000, time=60, partition="shared"]
+max-jobs-per-timespan: "60/1m"
+max-status-checks-per-second: 10
+local-cores: 1
+use-conda: true
+conda-prefix: /n/home13/qinqinyu/.conda/envs/
+jobs: 100
+rerun-incomplete: true
+cluster-generic-status-cmd: "slurm-status.py"

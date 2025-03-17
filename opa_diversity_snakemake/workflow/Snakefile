@@ -1,0 +1,120 @@
+SCRATCH = "/n/netscratch/grad_lab/Lab/qinqinyu/20250211_opa_diversity_snakemake"
+
+SAMPLES_LAB, = glob_wildcards("input_data/complete_genome_assemblies/grad_lab/{sample}.fa")
+SAMPLES_PUBLIC, = glob_wildcards("input_data/complete_genome_assemblies/public/{sample}.fa")
+SAMPLES = SAMPLES_LAB+SAMPLES_PUBLIC
+SAMPLES_COMMENSALS, = glob_wildcards("input_data/complete_genome_assemblies/commensals/{sample}.fa")
+print(SAMPLES)
+
+REGIONS=["sv", "hv1", "hv2"]
+INFLATIONS=[14, 20, 40, 60, 80, 100, 120, 140]
+FIGURE_FORMATS=["png", "pdf"]
+PAIRED=["1", "2"]
+
+print(REGIONS)
+
+localrules: all, opa_id, parse_prokka, parse_progressivemauve, assign_opa_loci, translate_opa_seqs, filter_opa_aa_seqs, similar_opa, split_alignment, mcl_summary, mcl_plot, get_opa_num, write_itol_num_opa_genes, write_itol_strain_metadata, get_inputs_for_beast, opa_id_commensals, postprocess_commensal_opa, itol_neisseria, plot_opa_frame
+
+rule all:
+    input:
+        #opa_annotation.smk
+        expand("results/assemblies_shifted/{sample}.fa", sample=SAMPLES),
+        expand("results/opa_sequences/{sample}.fa", sample=SAMPLES),
+        expand("results/opa_sequences_no_repeats/{sample}.fa", sample=SAMPLES),
+        expand("results/opa_locations/{sample}.csv", sample=SAMPLES),
+        #gene_annotation.smk
+        expand("results/annotations/{sample}.gff", sample=SAMPLES),
+        expand("results/annotations/{sample}.csv", sample=SAMPLES),
+        #genomic_rearrangements.smk
+        expand("results/progressivemauve/pairwise_outputs/{sample}.xmfa", sample=SAMPLES),
+        "results/progressivemauve/pairwise_lcbs.csv",
+        "results/opa_metadata_locus.csv",
+        "figures/opa_loci_definitions.png",
+        #diversity.smk
+        expand("results/opa_sequences_aa/{sample}.fa", sample=SAMPLES),
+        "results/opa_sequences_aa/opa_sequences_aa.fa.all.clean",
+        "results/opa_sequences_aa/opa_sequences_excluded_in_alignment.csv",
+        "results/alignments/opa_sequences_aa.fa.aln",
+        "results/pairwise_distance/within_strain_pairwise_distance_aa.csv",
+        "figures/pairwise_distance_aa_within_between_strains_hist.pdf",
+        "figures/pairwise_distance_aa_within_between_strains_hist.png",
+        'results/pairwise_distance/within_strain_similar_opa_aa.csv',
+        'figures/within_strain_similar_opa_aa.png',
+        'figures/within_strain_similar_opa_aa.pdf',
+        'figures/within_strain_similar_opa_aa_num_strains.png',
+        'figures/within_strain_similar_opa_aa_num_strains.pdf',
+        #clustering.smk
+        "results/opa_sequences_no_repeats/opa_sequences_no_repeats.fa.all",
+        "results/alignments/opa_sequences_no_repeats.fa.aln",
+        expand("results/alignments/opa_sequences_no_repeats_{region}.fa.aln", region=REGIONS),
+        expand("results/mash/opa_sequences_no_repeats_{region}_ungapped.fa", region=REGIONS),
+        expand("results/mash/opa_sequences_no_repeats_{region}_ungapped.fa.msh", region=REGIONS),
+        expand("results/mash/sv_mash_distance.tab", region=REGIONS),
+        expand("results/mcl/{region}_mash_distance.abc", region=REGIONS),
+        expand("results/mcl/{region}.mci", region=REGIONS),
+        expand("results/mcl/{region}.tab", region=REGIONS),
+        expand("results/mcl/out.{region}.mci.I{inflation}", region=REGIONS, inflation=INFLATIONS),
+        expand("results/mcl/dump.{region}.nci.I{inflation}", region=REGIONS, inflation=INFLATIONS),
+        expand("results/mcl/{region}.info", region=REGIONS),
+        expand("results/mcl/{region}.meet", region=REGIONS),
+        expand("results/mcl/{region}.meet_dist", region=REGIONS),
+        expand("results/mcl/{region}_summary.csv", region=REGIONS),
+        expand("figures/clusters/mcl_cluster_summary_{region}.{figure_format}", region=REGIONS, figure_format=FIGURE_FORMATS),
+        "results/mcl/mcl_clusters.csv",
+        #whole_genome_phylogeny.smk
+        # expand(SCRATCH+"/simulated_short_reads/{sample}_{paired}.fastq.gz", sample=SAMPLES, paired=PAIRED),
+        #"results/gubbins/complete_genome_pseudogenomes.filtered_polymorphic_sites.fa",
+        #"results/gubbins/complete_genome_pseudogenomes.final_tree.tre"
+        "results/gubbins/complete_genome_pseudogenomes.filtered_polymorphic_sites.fasta",
+        "results/gubbins/complete_genome_pseudogenomes.final_tree.tre",
+        #write_itol.smk
+        "results/summary_statistics/num_opa_genes_by_strain.csv",
+        "results/itol/itol_num_opa_genes.txt",
+        "results/itol/itol_anatomic_site.txt",
+        "results/itol/itol_gender.txt",
+        "results/itol/itol_sexual_behavior.txt",
+        #dated_phylogeny.smk
+        "results/beast/dates.dat",
+        "results/beast/complete_genomes_recomb_masked_with_dates.fasta",
+        #commensal_opa.smk
+        expand("results/commensals/opa_sequences/{sample}.fa", sample=SAMPLES_COMMENSALS),
+        expand("results/commensals/opa_sequences_no_repeats/{sample}.fa", sample=SAMPLES_COMMENSALS),
+        expand("results/commensals/opa_locations/{sample}.csv", sample=SAMPLES_COMMENSALS),
+        "results/commensals/opa_commensals_metadata.csv",
+        "results/commensals/mash/neisseria_mash_distance.tab",
+        "results/commensals/mash/neisseria_mash_distance.phy",
+        "results/commensals/rapidnj/neisseria_opa.nwk",
+        "results/commensals/itol/itol_neisseria_species.txt",
+        "results/commensals/mafft/opa_sequences_no_repeats_neisseria.fa.aln",
+        #frame.smk
+        expand("figures/frame/frame_on_by_strain.{figure_format}", figure_format=FIGURE_FORMATS)
+
+# Annotate opa genes using custom script
+include: "rules/opa_annotation.smk"
+
+# Annotate all other genes using Prokka
+include: "rules/gene_annotation.smk"
+
+# Calculate genomic rearrangements using Progressivemauve
+include: "rules/genomic_rearrangements.smk"
+
+# Calculate diversity statistics
+include: "rules/diversity.smk"
+
+# Cluster sequences
+include: "rules/clustering.smk"
+
+# # Get the whole-genome time-scaled phylogeny
+include: "rules/whole_genome_phylogeny.smk"
+
+# Write itol annotation files
+include: "rules/write_itol.smk"
+
+# Get dated phylogeny using Beast
+include: "rules/dated_phylogeny.smk"
+
+# Annotate opa genes in commensal complete genomes
+include: "rules/commensal_opa.smk"
+
+# Determine frame information
+include: "rules/frame.smk"
