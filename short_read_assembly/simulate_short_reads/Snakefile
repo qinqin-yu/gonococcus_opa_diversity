@@ -1,0 +1,29 @@
+import pandas as pd
+
+SAMPLES, = glob_wildcards("complete_genome_assemblies/{sample}.fa")
+PAIRED=["1", "2"]
+
+localrules: all
+
+rule all:
+    input:
+        expand("simulated_short_reads/{sample}_{paired}.fastq.gz", sample=SAMPLES, paired=PAIRED)
+
+rule simulate_short_reads_public:
+    input:
+        "complete_genome_assemblies/{sample}.fa"
+    output:
+        expand("simulated_short_reads/{{sample}}_{paired}.fastq.gz", paired=PAIRED)
+    params:
+        outdir="simulated_short_reads/"
+    conda:
+        "envs/art.yml"
+    shell:
+        """
+            mkdir -p {params.outdir}
+            art_illumina -p -ss MSv3 -i {input} -l 250 -f 80 -m 600 -s 100 -o {params.outdir}/{wildcards.sample}_ -na
+            mv {params.outdir}/{wildcards.sample}_1.fq {params.outdir}/{wildcards.sample}_1.fastq
+            mv {params.outdir}/{wildcards.sample}_2.fq {params.outdir}/{wildcards.sample}_2.fastq
+            gzip {params.outdir}/{wildcards.sample}_1.fastq
+            gzip {params.outdir}/{wildcards.sample}_2.fastq
+        """
