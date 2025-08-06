@@ -1,0 +1,9 @@
+name: seqkit
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - nodefaults
+dependencies:
+  - seqkit=2.8.2=h9ee0642_0
+prefix: /n/home13/qinqinyu/.conda/envs/seqkit

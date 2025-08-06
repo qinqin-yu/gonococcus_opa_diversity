@@ -25,7 +25,8 @@ output_path = args.itol_filename
 
 unique_annotations = np.unique(df[annotation])
 color_palette = 'mako'
-colors = sns.color_palette(color_palette, len(unique_annotations)).as_hex()
+colors = ['#0D0707', '#6A3939', "#AF6E6E", "#DBBDBD"] #"#422424", 
+# colors = sns.color_palette(color_palette, len(unique_annotations)).as_hex()
 colors_dict = dict(zip(unique_annotations, colors))
 
 fnc.itol_colorstrip(legend, annotation, sample_name, colors_dict, output_path)

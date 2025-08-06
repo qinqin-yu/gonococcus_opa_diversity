@@ -11,7 +11,8 @@ import os
 import argparse
 
 # Gets the different regions of the alignment
-# Selected by eye by looking at alignment in jalview and finding areas of low conservation
+# Defined in FA1090_opa_1 by comparing the nucleotide sequence to that from Bhat et al.
+# The regions in the other opa sequences are then defined using the alignment
 
 # sv = semivariable region
 # hv1 = hypervariable region 1
@@ -36,7 +37,7 @@ alignment = AlignIO.read(args.alignment_filename, 'fasta')
 # Get the reference sequence
 ref = str(alignment[-1].seq)
 
-# Get the positions of in the alignmnet that correspond to the different variable regions
+# Get the positions of in the alignment that correspond to the different variable regions
 # Replace all bases by 's'
 ref_replaced = ref.replace('a', 's')
 ref_replaced = ref_replaced.replace('t', 's')

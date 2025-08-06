@@ -44,7 +44,7 @@ rule mash_neisseria:
         "../envs/mash.yml"
     shell:
         """
-            mkdir -p mash/
+            mkdir -p results/mash/
 
             cat {input.commensals}>results/commensals/opa_sequences_no_repeats/opa_sequences_no_repeats.fa.all
             cat results/commensals/opa_sequences_no_repeats/opa_sequences_no_repeats.fa.all {input.gc} > {output.neisseria}
@@ -61,6 +61,9 @@ rule mash_to_phylip_neisseria:
         mash="results/commensals/mash/neisseria_mash_distance.tab"
     output:
         phylip="results/commensals/mash/neisseria_mash_distance.phy"
+    resources:
+        mem_mb=lambda wildcards, attempt: attempt * 4000,
+        time=lambda wildcards, attempt: attempt * 60
     conda:
         "../envs/python_minimal.yml"
     shell:
@@ -77,7 +80,7 @@ rule rapidnj_neisseria:
         "../envs/rapidnj.yml"
     shell:
         """
-            mkdir -p commensals/rapidnj/
+            mkdir -p results/commensals/rapidnj/
             rapidnj {input.phylip} -i pd -x {output.tree}
 
             # Remove apostrophes from opa names in tree

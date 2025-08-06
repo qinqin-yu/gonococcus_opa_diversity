@@ -134,9 +134,9 @@ between_strains_flattened_nonan = between_strains_flattened[~np.isnan(between_st
 
 plt.figure(figsize = (6,3))
 bins = np.linspace(0, 0.5, 50)
-plt.hist(between_strains_flattened_nonan, bins = bins, label = 'Between strains', density = True, histtype = 'step')
-plt.hist(within_strain_distance['distance'].values, bins = bins, label = 'Within strains', density = True, histtype = 'step')
-plt.xlabel('Pairwise amino acid distance between $opa$ genes')
+plt.hist(between_strains_flattened_nonan, bins = bins, label = 'Between isolates', density = True, histtype = 'step', color = '#919BCA')
+plt.hist(within_strain_distance['distance'].values, bins = bins, label = 'Within isolates', density = True, histtype = 'step', color = '#ad6a6c')
+plt.xlabel('Pairwise amino acid distance\nbetween $opa$ genes')
 plt.ylabel('Density')
 plt.legend(loc = (1.01, 0))
 plt.yscale('log')

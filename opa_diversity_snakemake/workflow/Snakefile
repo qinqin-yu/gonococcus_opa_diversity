@@ -1,19 +1,31 @@
+import pandas as pd
+
 SCRATCH = "/n/netscratch/grad_lab/Lab/qinqinyu/20250211_opa_diversity_snakemake"
 
 SAMPLES_LAB, = glob_wildcards("input_data/complete_genome_assemblies/grad_lab/{sample}.fa")
 SAMPLES_PUBLIC, = glob_wildcards("input_data/complete_genome_assemblies/public/{sample}.fa")
-SAMPLES = SAMPLES_LAB+SAMPLES_PUBLIC
+SAMPLES_PUBLIC_NEW, = glob_wildcards("input_data/complete_genome_assemblies/public_20230215_20250731/{sample}.fa")
+
+SAMPLES = SAMPLES_LAB+SAMPLES_PUBLIC+SAMPLES_PUBLIC_NEW
 SAMPLES_COMMENSALS, = glob_wildcards("input_data/complete_genome_assemblies/commensals/{sample}.fa")
-print(SAMPLES)
+SAMPLES_REPRESENTATIVE, = glob_wildcards("input_data/representative_genome_pseudogenomes/{sample}_pseudogenome.fasta")
+
+# Should update these later once I integrate these rules into the snakemake pipeline (rather than from ipynb notebooks)
+SUBTREES, = glob_wildcards("results/subtrees/isolates/subtree_{subtree}_isolates.txt")
+SUBTREE_REFS, = glob_wildcards("results/subtrees/pseudogenome_references/{sample}.fa")
+SUBTREE_SAMPLES_NO_REFS = pd.read_csv("results/subtrees/pseudogenome_references/pseudogenome_reference.csv", index_col = 0)['isolate'].values
+SUBTREE_SAMPLES = SUBTREE_REFS+list(SUBTREE_SAMPLES_NO_REFS)
 
 REGIONS=["sv", "hv1", "hv2"]
 INFLATIONS=[14, 20, 40, 60, 80, 100, 120, 140]
 FIGURE_FORMATS=["png", "pdf"]
 PAIRED=["1", "2"]
+LOCI = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
 
-print(REGIONS)
+# Allow 2022NG-0032 assembly to be processed with specific rule so that rotation can occur correctly
+ruleorder: rotate_origin_public_new_2022NG_0032 > rotate_origin_public_new
 
-localrules: all, opa_id, parse_prokka, parse_progressivemauve, assign_opa_loci, translate_opa_seqs, filter_opa_aa_seqs, similar_opa, split_alignment, mcl_summary, mcl_plot, get_opa_num, write_itol_num_opa_genes, write_itol_strain_metadata, get_inputs_for_beast, opa_id_commensals, postprocess_commensal_opa, itol_neisseria, plot_opa_frame
+localrules: all, opa_id, parse_prokka, parse_progressivemauve, assign_opa_loci, translate_opa_seqs, filter_opa_aa_seqs, similar_opa, split_alignment, mcl_summary, mcl_plot, get_opa_num, write_itol_num_opa_genes, write_itol_strain_metadata, write_itol_representative_complete_genomes, get_inputs_for_beast, opa_id_commensals, postprocess_commensal_opa, itol_neisseria, plot_opa_frame, subtree_get_inputs_for_beast
 
 rule all:
     input:
@@ -29,20 +41,23 @@ rule all:
         expand("results/progressivemauve/pairwise_outputs/{sample}.xmfa", sample=SAMPLES),
         "results/progressivemauve/pairwise_lcbs.csv",
         "results/opa_metadata_locus.csv",
-        "figures/opa_loci_definitions.png",
+        expand("figures/loci/opa_loci_definitions.{figure_format}", figure_format=FIGURE_FORMATS),
         #diversity.smk
         expand("results/opa_sequences_aa/{sample}.fa", sample=SAMPLES),
         "results/opa_sequences_aa/opa_sequences_aa.fa.all.clean",
         "results/opa_sequences_aa/opa_sequences_excluded_in_alignment.csv",
         "results/alignments/opa_sequences_aa.fa.aln",
         "results/pairwise_distance/within_strain_pairwise_distance_aa.csv",
-        "figures/pairwise_distance_aa_within_between_strains_hist.pdf",
-        "figures/pairwise_distance_aa_within_between_strains_hist.png",
+        "figures/diversity/pairwise_distance_aa_within_between_strains_hist.pdf",
+        "figures/diversity/pairwise_distance_aa_within_between_strains_hist.png",
         'results/pairwise_distance/within_strain_similar_opa_aa.csv',
-        'figures/within_strain_similar_opa_aa.png',
-        'figures/within_strain_similar_opa_aa.pdf',
-        'figures/within_strain_similar_opa_aa_num_strains.png',
-        'figures/within_strain_similar_opa_aa_num_strains.pdf',
+        'figures/diversity/within_strain_similar_opa_aa.png',
+        'figures/diversity/within_strain_similar_opa_aa.pdf',
+        'figures/diversity/within_strain_similar_opa_aa_num_strains.png',
+        'figures/diversity/within_strain_similar_opa_aa_num_strains.pdf',
+        'results/pairwise_distance/pseudogenome_distances.csv',
+        'results/pairwise_distance/between_strain_opa_distance_aa.csv',
+        'results/pairwise_distance/between_strain_opa_and_genome_distance_aa.csv',
         #clustering.smk
         "results/opa_sequences_no_repeats/opa_sequences_no_repeats.fa.all",
         "results/alignments/opa_sequences_no_repeats.fa.aln",
@@ -62,17 +77,19 @@ rule all:
         expand("figures/clusters/mcl_cluster_summary_{region}.{figure_format}", region=REGIONS, figure_format=FIGURE_FORMATS),
         "results/mcl/mcl_clusters.csv",
         #whole_genome_phylogeny.smk
-        # expand(SCRATCH+"/simulated_short_reads/{sample}_{paired}.fastq.gz", sample=SAMPLES, paired=PAIRED),
-        #"results/gubbins/complete_genome_pseudogenomes.filtered_polymorphic_sites.fa",
-        #"results/gubbins/complete_genome_pseudogenomes.final_tree.tre"
+        # Make the read files temporary later
+        expand(SCRATCH+"/simulated_short_reads/{sample}_{paired}.fastq.gz", sample=SAMPLES, paired=PAIRED),
         "results/gubbins/complete_genome_pseudogenomes.filtered_polymorphic_sites.fasta",
         "results/gubbins/complete_genome_pseudogenomes.final_tree.tre",
+        "results/gubbins/representative_and_complete_genome_pseudogenomes_dedup.filtered_polymorphic_sites.fasta",
+        "results/gubbins/representative_and_complete_genome_pseudogenomes_dedup.final_tree.tre",
         #write_itol.smk
         "results/summary_statistics/num_opa_genes_by_strain.csv",
         "results/itol/itol_num_opa_genes.txt",
         "results/itol/itol_anatomic_site.txt",
         "results/itol/itol_gender.txt",
         "results/itol/itol_sexual_behavior.txt",
+        "results/itol/itol_representative_complete_genomes.txt",
         #dated_phylogeny.smk
         "results/beast/dates.dat",
         "results/beast/complete_genomes_recomb_masked_with_dates.fasta",
@@ -87,7 +104,17 @@ rule all:
         "results/commensals/itol/itol_neisseria_species.txt",
         "results/commensals/mafft/opa_sequences_no_repeats_neisseria.fa.aln",
         #frame.smk
-        expand("figures/frame/frame_on_by_strain.{figure_format}", figure_format=FIGURE_FORMATS)
+        expand("figures/frame/frame_on_by_strain.{figure_format}", figure_format=FIGURE_FORMATS),
+        #subtrees.smk
+        expand("results/subtrees/opa_sequences_aligned/subtree_{subtree}_locus_{locus}.aln", subtree=SUBTREES, locus=LOCI),
+        expand("results/subtrees/pseudogenomes/{sample}_subtree_pseudogenome.fasta", sample = SUBTREE_SAMPLES),
+        expand("results/subtrees/gubbins/subtree_{subtree}.filtered_polymorphic_sites.fasta", subtree=SUBTREES),
+        expand("results/subtrees/gubbins/subtree_{subtree}.final_tree.tre", subtree=SUBTREES),
+        expand("results/subtrees/beast/subtree_{subtree}_dates.dat", subtree=SUBTREES),
+        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.fasta", subtree=SUBTREES),
+        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates-subtree_{subtree}_recomb_masked_with_dates.trees", subtree=[4]),
+        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.log", subtree=[4])
+
 
 # Annotate opa genes using custom script
 include: "rules/opa_annotation.smk"
@@ -118,3 +145,6 @@ include: "rules/commensal_opa.smk"
 
 # Determine frame information
 include: "rules/frame.smk"
+
+# Subtree analysis
+include: "rules/subtrees.smk"

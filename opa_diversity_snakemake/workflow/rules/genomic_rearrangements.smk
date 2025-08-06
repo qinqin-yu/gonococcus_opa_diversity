@@ -38,11 +38,11 @@ rule assign_opa_loci:
     output:
         metadata="results/opa_metadata_locus.csv",
         locus_assignment="results/progressivemauve/locus_assignment_ranges.csv",
-        fig_filename="figures/opa_loci_definitions.png"
-
+        fig_filenames=expand("figures/loci/opa_loci_definitions.{figure_format}", figure_format = FIGURE_FORMATS)
     conda:
         "../envs/python_minimal.yml"
     shell:
         """
-            workflow/scripts/assign_opa_loci.py {input} {output.metadata} {output.locus_assignment} {output.fig_filename}
+            mkdir -p figures/loci
+            workflow/scripts/assign_opa_loci.py {input} {output.metadata} {output.locus_assignment} {output.fig_filenames}
         """

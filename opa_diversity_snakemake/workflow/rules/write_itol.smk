@@ -38,3 +38,17 @@ rule write_itol_strain_metadata:
             mkdir -p results/itol
             workflow/scripts/write_itol_strain_metadata.py {input.opa_metadata} {input.genome_metadata} {output.anatomic_site} {output.gender} {output.sexual_behavior}
         """
+
+rule write_itol_representative_complete_genomes:
+    output:
+        "results/itol/itol_representative_complete_genomes.txt"
+    params:
+        public_assemblies_folder="input_data/complete_genome_assemblies/public",
+        lab_assemblies_folder="input_data/complete_genome_assemblies/grad_lab"
+    conda:
+        "../envs/python_minimal.yml"
+    shell:
+        """
+            mkdir -p results/itol
+            workflow/scripts/write_itol_representative_complete_genomes.py {params.public_assemblies_folder} {params.lab_assemblies_folder} {output}
+        """
