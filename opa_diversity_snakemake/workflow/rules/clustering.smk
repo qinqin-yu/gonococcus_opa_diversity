@@ -143,7 +143,7 @@ rule mcl_plot:
 
 rule get_mcl_clusters:
     input:
-        "results/mcl/dump.sv.nci.I80",
+        "results/mcl/dump.sv.nci.I120",
         "results/mcl/dump.hv1.nci.I80",
         "results/mcl/dump.hv2.nci.I140"
     output:

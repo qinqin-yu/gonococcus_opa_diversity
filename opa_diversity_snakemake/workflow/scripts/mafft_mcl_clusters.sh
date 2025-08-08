@@ -9,7 +9,7 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=
 #SBATCH --account=grad_lab
-#SBATCH --array=0-219
+#SBATCH --array=0-222
 
 mkdir -p cluster_alignments/
 
