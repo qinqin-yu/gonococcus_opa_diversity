@@ -11,13 +11,17 @@ import itol_functions as fnc
 def get_args():
     parser = argparse.ArgumentParser(description='Write itol for number of opa genes')
     parser.add_argument("public_assemblies_folder", help="Folder that contains the publicly availble complete genome assemblies, with file endings .fa")
+    parser.add_argument("public_assemblies_new_folder", help="Folder that contains the new publicly availble complete genome assemblies, with file endings .fa")
     parser.add_argument("lab_assemblies_folder", help="Folder that contains the lab generated complete genome assemblies, with file endings .fa")
     parser.add_argument("itol_filename", help="itol filename")
     return parser.parse_args()
 
 args = get_args()
 
-public_filenames = glob.glob(args.public_assemblies_folder + "/*.fa")
+public_filenames_old = glob.glob(args.public_assemblies_folder + "/*.fa")
+public_filenames_new = glob.glob(args.public_assemblies_new_folder + "/*.fa")
+
+public_filenames = public_filenames_old+public_filenames_new
 public_complete = []
 for filename in public_filenames:
     public_complete.append(filename.split('/')[-1].split('.fa')[0].replace("#","_"))
@@ -27,13 +31,13 @@ lab_complete = []
 for filename in lab_filenames:
     lab_complete.append(filename.split('/')[-1].split('.fa')[0].replace("#","_"))
 
-legend = pd.DataFrame({'wgs_id':public_complete, 'Complete genome':'Publicly available'})
-legend = pd.concat([legend, pd.DataFrame({'wgs_id':lab_complete, 'Complete genome':'This study'})], ignore_index = True)
+legend = pd.DataFrame({'wgs_id':public_complete, 'Complete genomes':'Publicly available'})
+legend = pd.concat([legend, pd.DataFrame({'wgs_id':lab_complete, 'Complete genomes':'This study'})], ignore_index = True)
 
-# Write itol for anatomic site
+# Write itol for complete genomes (publicly available or lab generated)
 
 sample_name = 'wgs_id'
-annotation = 'Complete genome'
+annotation = 'Complete genomes'
 output_path = args.itol_filename
 
 unique_annotations = np.unique(legend[annotation])

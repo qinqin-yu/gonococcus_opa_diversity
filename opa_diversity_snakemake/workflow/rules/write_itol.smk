@@ -44,11 +44,12 @@ rule write_itol_representative_complete_genomes:
         "results/itol/itol_representative_complete_genomes.txt"
     params:
         public_assemblies_folder="input_data/complete_genome_assemblies/public",
+        public_assemblies_new_folder='input_data/complete_genome_assemblies/public_20230215_20250731',
         lab_assemblies_folder="input_data/complete_genome_assemblies/grad_lab"
     conda:
         "../envs/python_minimal.yml"
     shell:
         """
             mkdir -p results/itol
-            workflow/scripts/write_itol_representative_complete_genomes.py {params.public_assemblies_folder} {params.lab_assemblies_folder} {output}
+            workflow/scripts/write_itol_representative_complete_genomes.py {params.public_assemblies_folder} {params.public_assemblies_new_folder} {params.lab_assemblies_folder} {output}
         """
