@@ -109,7 +109,10 @@ rule all:
         expand("results/subtrees/beast/subtree_{subtree}_dates.dat", subtree=SUBTREES),
         expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.fasta", subtree=SUBTREES),
         expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates-subtree_{subtree}_recomb_masked_with_dates.trees", subtree=[4]),
-        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.log", subtree=[4])
+        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.log", subtree=[4]),
+        #hypervariable_association.smk
+        "results/fastbaps/fastbaps_clusters.csv",
+        "results/fastbaps/hv1_hv2_association_results.txt"
 
 
 # Annotate opa genes using custom script
@@ -144,3 +147,6 @@ include: "rules/frame.smk"
 
 # Subtree analysis
 include: "rules/subtrees.smk"
+
+# Hypervariable association analysis
+include: "rules/hypervariable_association.smk"
