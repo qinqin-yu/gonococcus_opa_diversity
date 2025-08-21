@@ -1,0 +1,88 @@
+,wgs_id,accession,names,biosample_collection_date,continent,country,region,assembly,bioproject,release_date,long_read_sequencer,assembly_method,notes,source,original_reference
+0,25818_3#234,ERR3201034,"101335210,NY0370",2012-11-30,North America,USA,New York City,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Mortimer2021
+1,96MB,SRR16683847,96MB,2019,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+2,AUNG1065,SRR8566824,AUNG1065,2017-06-05,Oceania,Australia,Victoria,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Williamson2019
+3,AUNG1251,SRR8566790,AUNG1251,2017-07-13,Oceania,Australia,Victoria,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Williamson2019
+4,AUNG1291,SRR8567236,AUNG1291,2017-07-20,Oceania,Australia,Victoria,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Williamson2019
+5,CCC010,SRR16683508,CCC010,2015-11-02,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+6,CCC012,SRR16683506,CCC012,2015-12-17,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+7,CCC013,SRR16683505,CCC013,2016-01-04,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+8,CCC014,SRR16683504,CCC014,2016-01-06,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+9,CCC015,SRR16683503,CCC015,2016-01-13,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+10,CCC016,SRR16683501,CCC016,2016-02-17,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+11,CCC017,SRR16683500,CCC017,2016-02-23,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+12,CCC020,SRR16683497,CCC020,2016-03-04,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+13,CCC028,SRR16683724,CCC028,2016-06-07,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+14,CCC033,SRR16683720,CCC033,2016-07-08,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+15,CCC048,SRR16683707,CCC048,2017-02-24,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+16,DDD001,SRR16683703,DDD001,2017-03-15,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+17,DDD029,SRR16683673,DDD029,2017-11-20,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+18,DDD031,SRR16683670,DDD031,2017-12-18,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+19,DDD034,SRR16683667,DDD034,2018-02-02,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+20,DDD038,SRR16683664,DDD038,2018-02-12,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+21,DDD046,SRR16683655,DDD046,2018-08-06,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+22,EEE004,SRR16683646,EEE004,2018-11-19,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+23,EEE013,SRR16683604,EEE013,2018-12-24,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+24,EEE014,SRR16683602,EEE014,2018-12-27,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+25,EEE015,SRR16683601,EEE015,2015-08-11,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+26,EEE016,SRR16683600,EEE016,2015-11-11,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+27,EEE018,SRR16683598,EEE018,2016-01-19,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+28,EEE019,SRR16683597,EEE019,2016-06-03,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+29,EEE020,SRR16683596,EEE020,2016-07-07,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+30,EEE021,SRR16683594,EEE021,2016-07-13,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+31,EEE023,SRR16683592,EEE023,2016-11-30,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+32,EEE026,SRR16683589,EEE026,2017-04-27,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+33,EEE029,SRR16683586,EEE029,2017-10-10,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+34,EEE030,SRR16683585,EEE030,2017-12-07,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+35,EEE034,SRR16683551,EEE034,2014-08-19,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+36,EEE035,SRR16683550,EEE035,2014-10-27,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+37,EEE037,SRR16683548,EEE037,2014-01-03,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+38,FA1090,NC_002946,"FA1090,NC_002946",1980,North America,USA,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,SanchezBuso2018
+39,FA19,NZ_CP012026,"FA19,NZ_CP012026",1962,North America,USA,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,SanchezBuso2018
+40,FA6140,NZ_CP012027,"FA6140,NZ_CP012027",1983,North America,USA,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,SanchezBuso2018
+41,FFF004,SRR16683530,FFF004,2014-03-12,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+42,FFF005,SRR16683529,FFF005,2014-03-14,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+43,FFF007,SRR16683527,FFF007,2014-04-01,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+44,FFF012,SRR16683493,FFF012,2014-06-06,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+45,FFF017,SRR16683489,FFF017,2014-08-04,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+46,FFF024,SRR16683482,FFF024,2014-09-02,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+47,FFF026,SRR16683480,FFF026,2014-09-17,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+48,FFF038,SRR16683469,FFF038,2014-11-05,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+49,FFF044,SRR16683463,FFF044,2014-06-26,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+50,FFF047,SRR16683459,FFF047,2015-01-08,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+51,GCGS0245,ERR1067881,"GCGS0245,17176_1#82,ORA-200110-12",2001,North America,USA,Orange County,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+52,GCGS0276,ERR1067786,"GCGS0276,17150_8#78,KCY-200008-14",2000,North America,USA,Kansas City,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+53,GCGS0306,ERR1067873,"GCGS0306,17176_1#74,ATL-200112-05",2001,North America,USA,Atlanta,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+54,GCGS0313,ERR854949,"GCGS0313,15335_2#83,BAL-201203-18",2012,North America,USA,Baltimore,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+55,GCGS0339,ERR855392,"GCGS0339,15335_7#52,CHI-201312-22",2013,North America,USA,Chicago,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+56,GCGS0373,ERR1067806,"GCGS0373,17176_1#7,IND-201308-13",2013,North America,USA,Indianapolis,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+57,GCGS0423,ERR855041,"GCGS0423,15335_3#80,MIN-201212-08",2012,North America,USA,Minneapolis,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+58,GCGS0431,ERR855045,"GCGS0431,15335_3#84,OKC-201209-17",2012,North America,USA,Oklahoma City,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+59,GCGS0457,ERR855051,"GCGS0457,15335_3#90,PHI-201212-05",2012,North America,USA,Philadelphia,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+60,GCGS0769,ERR855043,"GCGS0769,15335_3#82,OKC-201208-09",2012,North America,USA,Oklahoma City,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+61,GCGS0834,ERR855360,"GCGS0834,15335_7#20,LAX-201203-03",2012,North America,USA,Los Angeles,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+62,GCGS0864,ERR854921,"GCGS0864,15335_2#55,ALB-201207-11",2012,North America,USA,Albuquerque,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+63,GCGS1013,ERR855268,"GCGS1013,15335_6#23,BAL-201112-12",2011,North America,USA,Baltimore,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+64,GCGS1014,ERR956688,"GCGS1014,16043_2#21,CHI-201211-18",2012,North America,USA,Chicago,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+65,GCGS1095,ERR854905,"GCGS1095,15335_2#39,OKC-201202-07",2012,North America,USA,Oklahoma City,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Grad2014_2016
+66,GGG022,SRR16683890,GGG022,2019-01,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+67,GGG031,SRR16683885,GGG031,2019-01,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+68,HHH023,SRR16683841,HHH023,2019-06,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+69,HHH030,SRR16683833,HHH030,2019-10,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+70,HHH042,SRR16683820,HHH042,2019-01,Asia,Vietnam,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+71,JJJ010,SRR16683805,JJJ010,2015-03-26,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+72,JJJ020,SRR16683794,JJJ020,2015-06-29,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+73,JJJ025,not_submitted,JJJ025,,Asia,Hong Kong,PHL  HKSARG,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,unpublished
+74,Ng_118,SRR16683727,Ng_118,2019-08,North America,Dominican Republic,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+75,Ng_188,SRR16683617,Ng_188,2019-11,North America,Dominican Republic,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,BristowMortimer_2023
+76,SRR5827236,SRR5827236,"NZ2015-73,AUSMDU00006841",2014-12-08,Oceania,New Zealand,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Lee2018
+77,SRR5827322,SRR5827322,"NZ2015-300,AUSMDU00007059",2015-04-24,Oceania,New Zealand,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,Lee2018
+78,UMASS-DGI_1,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+79,UMASS-DGI_26,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+80,UMASS-DGI_36,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+81,UMASS-DGI_40,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+82,UMASS-DGI_46,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+83,UMASS-DGI_5,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+84,UMASS-DGI_54,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+85,UMASS-DGI_65,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
+86,UMASS-DGI_9,,,,,,,,,,Oxford Nanopore MinION,Autocycler v 0.2.1,,this_study,
