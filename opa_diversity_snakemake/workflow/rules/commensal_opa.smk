@@ -1,7 +1,29 @@
+rule rotate_commensals:
+    input: 
+        "input_data/complete_genome_assemblies/commensals/{sample}.fa"
+    output:
+        "results/commensals/assemblies_shifted/{sample}.fa"
+    shell:
+        """
+        mkdir -p results/commensals/assemblies_shifted/
+        # Match to first 90 bases of dnaA in FA1090 reference sequence (NC_002946.2) allowing for up to 5 mismatches (mening has a very similar sequence)
+        workflow/scripts/rotate/rotate -s ATGACATTAGCAGAGTTTTGGCCGCTGTGCCTCCGCCGTCTTCACGATATGTTGCCTCACGGGCAGTTTGCGCAATGGATTGCGCCCCTT -m 5 {input} > {output}
+        
+        # Check if the rotated file is empty (indicates that the sequence was not found)
+        # If so, then copy over the original sequence
+        
+        SIZE=$(stat -c %s {output} 2>/dev/null)
+        
+        if [ "$SIZE" -eq 0 ]; then
+            cp {input} {output}
+        fi
+        """
+        
+        
 rule opa_id_commensals:
     # Note that these complete genomes are not rotated
     input:
-        "input_data/complete_genome_assemblies/commensals/{sample}.fa"
+        "results/commensals/assemblies_shifted/{sample}.fa" #"input_data/complete_genome_assemblies/commensals/{sample}.fa"
     output:
         "results/commensals/opa_sequences/{sample}.fa",
         "results/commensals/opa_sequences_no_repeats/{sample}.fa",
