@@ -28,6 +28,9 @@ This subdirectory is where the pipeline looks for input genomes and where the ge
 * `representative_genome_pseudogenomes/`: containts pseudogenomes (reference-mapped draft genome assemblies) corresponding to representative genomes from the *N. gonorrhoeae* species.
 * `whole_genome_metadata/`: contains metadata about complete and representative genomes, including isolate sampling date, location, publication reference, sequencer and assembly method (for complete genomes).
 
+### results/
+Containts outputs of Snakemake pipeline and Jupyter notebook analyses.
+
 ### figures/
 Contains figures in the manuscript (plus some bonus figures that didn't make it into the manuscript). The manuscript figures are mostly in the `illustrator/` subdirectory (`fig2.png`, `fig3.png`, `fig5.png`, `fig6_rate_of_evo.png`, `fig7.png`). Figure 1 is at `itol/representative_and_complete_genomes.png` and Figure 4 is at `frame/frame_on_by_strain_compare_null_dist.png`.
 
