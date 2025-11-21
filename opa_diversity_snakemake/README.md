@@ -1,4 +1,4 @@
-This directory contains the Snakemake pipeline and downstream Jupyter notebooks to run the main analysis of *opa* diversity, phase, and evolution for the paper.
+This directory contains the Snakemake pipeline and downstream Jupyter notebooks to run the main analysis of *opa* diversity, phase, and evolution for the paper. It also contains the figures for the manuscript.
 
 The Snakemake pipeline is compatible with Snakemake v8+ and conda v24.7.1+. 
 
@@ -10,6 +10,19 @@ The Snakemake pipeline is compatible with Snakemake v8+ and conda v24.7.1+.
 ## To run
 1. Deposit complete genomes into the directory `input_data/complete_genome_assemblies/`.
 2. Submit job using `sbatch start_snakemake.sh` from the main directory.
+
+## Subdirectory structure
+
+### workflow/
+This subdirectory contains the code organized into:
+`rules/`: contains the Snakemake rules
+`scripts/`: contains the scripts that the rules depend on
+`notebooks/`: contains the Jupyter notebooks for downstream analysis using outputs from the Snakemake pipeline (mostly making figures) 
+`envs/`: contains the conda environment files used in the Snakemake pipeline
+`Snakefile`: the Snakefile that incorporates the different snakemake rule files and looks for the appropriate overall outputs
+
+### input_data/
+This subdirectory is where the pipeline looks for input genomes and where the genome metadata are located. The input genomes are not included in the GitHub repository due to file size limits, but can be found at (insert NCBI Bioproject). The directory is organized as follows:
 
 ## Manual scripts
 The following parts of the analysis must be run manually:
