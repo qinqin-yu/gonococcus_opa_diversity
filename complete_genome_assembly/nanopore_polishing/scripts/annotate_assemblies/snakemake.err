@@ -1,0 +1,91 @@
+Using profile slurm_genomics_pipeline for setting default command line arguments.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job           count
+----------  -------
+all               1
+annotation        6
+total             7
+
+Select jobs to execute...
+
+[Thu Nov 21 18:03:48 2024]
+rule annotation:
+    input: assemblies/DGI_65.fasta
+    output: annotations/DGI_65/DGI_65.gff
+    log: logs/annotation/DGI_65.log
+    jobid: 6
+    reason: Missing output files: annotations/DGI_65/DGI_65.gff
+    wildcards: sample=DGI_65
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 6 with external jobid '59116862'.
+
+[Thu Nov 21 18:03:48 2024]
+rule annotation:
+    input: assemblies/DGI_65b_IV.fasta
+    output: annotations/DGI_65b_IV/DGI_65b_IV.gff
+    log: logs/annotation/DGI_65b_IV.log
+    jobid: 2
+    reason: Missing output files: annotations/DGI_65b_IV/DGI_65b_IV.gff
+    wildcards: sample=DGI_65b_IV
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 2 with external jobid '59116864'.
+
+[Thu Nov 21 18:03:48 2024]
+rule annotation:
+    input: assemblies/DGI_65a_II.fasta
+    output: annotations/DGI_65a_II/DGI_65a_II.gff
+    log: logs/annotation/DGI_65a_II.log
+    jobid: 5
+    reason: Missing output files: annotations/DGI_65a_II/DGI_65a_II.gff
+    wildcards: sample=DGI_65a_II
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 5 with external jobid '59116866'.
+
+[Thu Nov 21 18:03:48 2024]
+rule annotation:
+    input: assemblies/EEE029.fasta
+    output: annotations/EEE029/EEE029.gff
+    log: logs/annotation/EEE029.log
+    jobid: 3
+    reason: Missing output files: annotations/EEE029/EEE029.gff
+    wildcards: sample=EEE029
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 3 with external jobid '59116868'.
+
+[Thu Nov 21 18:03:49 2024]
+rule annotation:
+    input: assemblies/EEE029a_VI.fasta
+    output: annotations/EEE029a_VI/EEE029a_VI.gff
+    log: logs/annotation/EEE029a_VI.log
+    jobid: 4
+    reason: Missing output files: annotations/EEE029a_VI/EEE029a_VI.gff
+    wildcards: sample=EEE029a_VI
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 4 with external jobid '59116870'.
+
+[Thu Nov 21 18:03:49 2024]
+rule annotation:
+    input: assemblies/EEE029b_VI.fasta
+    output: annotations/EEE029b_VI/EEE029b_VI.gff
+    log: logs/annotation/EEE029b_VI.log
+    jobid: 1
+    reason: Missing output files: annotations/EEE029b_VI/EEE029b_VI.gff
+    wildcards: sample=EEE029b_VI
+    threads: 8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=8, time=10, partition=serial_requeue
+
+Submitted job 1 with external jobid '59116873'.

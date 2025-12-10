@@ -1,0 +1,37 @@
+import os
+from Bio import SeqIO
+from datetime import datetime
+from collections import defaultdict
+from Bio import SearchIO
+from Bio import AlignIO
+from Bio.Seq import Seq
+import re
+
+SAMPLES, = glob_wildcards("assemblies/{sample}.fasta")
+SAMPLES = list(set(SAMPLES))
+
+rule all:
+    input:
+        expand("annotations/{sample}/{sample}.gff", sample=SAMPLES)
+        
+rule annotation:
+    input:
+        fasta="assemblies/{sample}.fasta"
+    params:
+        name="{sample}"
+    resources:
+        mem_mb=lambda wildcards, attempt: attempt * 1000,
+        time=lambda wildcards, attempt: attempt * 10,
+        cpus=8
+    output:
+        gff="annotations/{sample}/{sample}.gff"
+    threads: 8
+    conda:
+        "conda_envs/prokka.yml"
+    log:
+        "logs/annotation/{sample}.log"
+    shell:
+        """
+        mkdir -p annotations/
+        prokka --force --centre X --compliant --outdir annotations/{params.name} --locustag {params.name} --prefix {params.name} --genus Neisseria --species gonorrhoeae --strain {params.name} --cpus 8 {input.fasta}
+        """

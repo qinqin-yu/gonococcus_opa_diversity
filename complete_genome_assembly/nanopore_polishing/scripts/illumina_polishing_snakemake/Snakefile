@@ -1,0 +1,118 @@
+import os
+
+SAMPLES, = glob_wildcards("nanopore_assemblies/{sample}.fasta")
+SAMPLES = list(set(SAMPLES))
+PAIRED = ["1", "2"]
+
+rule all:
+        input:
+                expand("pypolca/{sample}.polypolish.pypolca.fasta", sample = SAMPLES)
+
+rule fastp:
+        input:
+                "fastqs/{sample}_{paired}.fastq.gz"
+        output:
+                processed="fastp/{sample}_{paired}.fastq.gz",
+                unpaired="fastp/{sample}_u{paired}.fastq.gz"
+        params:
+                name="{sample}"
+        resources:
+                mem_mb=lambda wildcards, attempt: attempt * 2000,
+                time=lambda wildcards, attempt: attempt * 30
+        conda:
+                "conda_envs/fastp.yml"
+        shell:
+                """
+                mkdir -p fastp/
+                fastp --in1 fastqs/{params.name}_1.fastq.gz --in2 fastqs/{params.name}_2.fastq.gz --out1 fastp/{params.name}_1.fastq.gz --out2 fastp/{params.name}_2.fastq.gz --unpaired1 fastp/{params.name}_u1.fastq.gz --unpaired2 fastp/{params.name}_u2.fastq.gz
+                """
+
+rule bwa_index:
+	input:
+		"nanopore_assemblies/{sample}.fasta"
+	output:
+		multiext("nanopore_assemblies/{sample}.fasta", ".0123", ".amb", ".ann", ".bwt.2bit.64", ".pac")
+	conda:
+		"conda_envs/bwa-mem2.yml"
+	shell:
+		"""
+		bwa-mem2 index {input}
+		"""
+
+
+rule bwa:
+	input:
+		assembly="nanopore_assemblies/{sample}.fasta",
+		idx=multiext("nanopore_assemblies/{sample}.fasta", ".0123", ".amb", ".ann", ".bwt.2bit.64", ".pac"),	
+		reads="fastp/{sample}_{paired}.fastq.gz"
+	output:
+		"polypolish/{sample}/alignments_{sample}_{paired}.sam"
+	params:
+		outfile="polypolish/{sample}/alignments_{sample}_{paired}.sam"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 2000,
+		time=lambda wildcards, attempt: attempt * 35
+	conda:
+		"conda_envs/bwa-mem2.yml"
+	shell:
+		"""
+		mkdir -p polypolish/
+		bwa-mem2 mem -t 16 -a {input.assembly} {input.reads} > {params.outfile}
+		"""
+
+rule polypolish_insert_filter:
+	input:
+		align1="polypolish/{sample}/alignments_{sample}_1.sam",
+		align2="polypolish/{sample}/alignments_{sample}_2.sam"
+	output:
+		filter1="polypolish/{sample}/filtered_alignments_{sample}_1.sam",
+		filter2="polypolish/{sample}/filtered_alignments_{sample}_2.sam"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 2000,
+		time=lambda wildcards, attempt: attempt * 30
+	conda:
+		"conda_envs/polypolish.yml"
+	shell:
+		"""
+		polypolish filter --in1 {input.align1} --in2 {input.align2} --out1 {output.filter1} --out2 {output.filter2}
+		"""
+
+rule polypolish:
+	input:
+		assembly="nanopore_assemblies/{sample}.fasta",
+		filter1="polypolish/{sample}/filtered_alignments_{sample}_1.sam",
+		filter2="polypolish/{sample}/filtered_alignments_{sample}_2.sam"
+	output:
+		"polypolish/{sample}/{sample}.polypolish.fasta"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 2000,
+		time=lambda wildcards, attempt: attempt * 30
+	conda:
+		"conda_envs/polypolish.yml"
+	shell:
+		"""
+		polypolish polish {input.assembly} {input.filter1} {input.filter2} > {output}
+		"""
+
+rule pypolca:
+	input:
+		assembly="polypolish/{sample}/{sample}.polypolish.fasta",
+		reads1="fastp/{sample}_1.fastq.gz",
+		reads2="fastp/{sample}_2.fastq.gz"
+	output:
+		fa="pypolca/{sample}.polypolish.pypolca.fasta"
+	threads: 16
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 4000,
+		cpus=16
+	conda:
+		"conda_envs/pypolca.yml"
+	params:
+		out_path="pypolca_tmp/{sample}"
+	shell:
+		"""
+        pypolca run -a {input.assembly} -1 {input.reads1} -2 {input.reads2} -t {threads} -o {params.out_path} -f --careful
+        mkdir -p pypolca
+        cp {params.out_path}/pypolca_corrected.fasta {output.fa}
+		"""
+

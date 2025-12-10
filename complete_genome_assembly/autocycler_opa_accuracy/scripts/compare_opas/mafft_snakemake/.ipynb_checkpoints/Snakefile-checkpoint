@@ -1,0 +1,21 @@
+SAMPLES, = glob_wildcards("../../../data/kit14/opa_sequences_collated/{sample}.fa")
+SAMPLES = list(set(SAMPLES))
+
+localrules: all, mafft
+
+rule all:
+    input:
+        expand("../../../data/kit14/opa_sequences_aligned/{sample}.aln", sample=SAMPLES)
+
+rule mafft:
+    input:
+        unaligned_opa = "../../../data/kit14/opa_sequences_collated/{sample}.fa",
+    output: 
+        aligned_opa = "../../../data/kit14/opa_sequences_aligned/{sample}.aln"
+    conda:
+        "conda_envs/mafft.yml"
+    shell:
+        """
+        mkdir -p ../../../data/kit14/opa_sequences_aligned
+        mafft --auto {input.unaligned_opa}>{output.aligned_opa}
+        """

@@ -1,0 +1,34 @@
+import pandas as pd
+
+SAMPLES, = glob_wildcards("fastqs/{sample}.fastq.gz")
+SAMPLES = list(set(SAMPLES))
+DEPTHS = ["50x", "75x", "100x", "125x"]
+SETS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+localrules: all
+
+def get_frac_for_depth(sample, depth):
+    # Get the fraction for subsampling a read set to a given depth
+    df = pd.read_csv("frac_for_read_depth.csv")
+    frac = df[df['strain']==sample][depth].values[0]
+    return frac
+
+rule all:
+    input:
+        expand("subsampled_reads/{sample}_{depth}_{set}.fastq.gz", sample=SAMPLES, depth=DEPTHS, set = SETS)
+
+rule seqtk:
+    input:
+        "fastqs/{sample}.fastq.gz"
+    output:
+        "subsampled_reads/{sample}_{depth}_{set}.fastq.gz"
+    params:
+        frac=lambda wildcards: get_frac_for_depth(wildcards.sample, wildcards.depth)
+    conda:
+        "conda_envs/seqtk.yml"
+    shell:
+        """
+            mkdir -p subsampled_reads/
+            seqtk sample -s100 {input} {params.frac} > subsampled_reads/{wildcards.sample}_{wildcards.depth}_{wildcards.set}.fastq
+            gzip subsampled_reads/{wildcards.sample}_{wildcards.depth}_{wildcards.set}.fastq
+        """

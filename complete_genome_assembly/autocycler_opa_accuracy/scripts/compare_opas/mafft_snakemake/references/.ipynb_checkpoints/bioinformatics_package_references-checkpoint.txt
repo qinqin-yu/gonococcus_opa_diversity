@@ -1,0 +1,4 @@
+rotate
+    paper: https://wellcomeopenresearch.org/articles/8-401
+    website: https://github.com/richarddurbin/rotate
+    version: 1.0

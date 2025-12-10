@@ -1,0 +1,1625 @@
+Using profile slurm_genomics_pipeline for setting default command line arguments.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment conda_envs/mafft.yml...
+Downloading and installing remote packages.
+Environment for /net/holy-nfsisilon/ifs/rc_labs/grad_lab/Users/qinqinyu/projects/nanopore_polishing/scripts/compare_opas/mafft_snakemake/conda_envs/mafft.yml created (location: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_)
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job      count
+-----  -------
+all          1
+mafft       21
+total       22
+
+Select jobs to execute...
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_7.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_7.aln
+    jobid: 31
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_7.fa
+    wildcards: sample=DGI_65_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_1.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_1.aln
+    jobid: 46
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_1.fa
+    wildcards: sample=DGI_65_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_7.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_7.aln
+    jobid: 32
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_7.fa
+    wildcards: sample=EEE029_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_4.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_4.aln
+    jobid: 26
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_4.fa
+    wildcards: sample=DGI_65_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_1.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_1.aln
+    jobid: 19
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_1.fa
+    wildcards: sample=EEE029_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:53 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_9.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_9.aln
+    jobid: 61
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_9.fa
+    wildcards: sample=EEE029_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_4.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_4.aln
+    jobid: 54
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_4.fa
+    wildcards: sample=EEE029_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_8.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_8.aln
+    jobid: 20
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_8.fa
+    wildcards: sample=EEE029_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_5.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_5.aln
+    jobid: 62
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_5.fa
+    wildcards: sample=DGI_65_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_11.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_11.aln
+    jobid: 55
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_11.fa
+    wildcards: sample=EEE029_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_2.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_2.aln
+    jobid: 48
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_2.fa
+    wildcards: sample=DGI_65_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_6.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_6.aln
+    jobid: 41
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_6.fa
+    wildcards: sample=DGI_65_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_3.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_3.aln
+    jobid: 34
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_3.fa
+    wildcards: sample=EEE029_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_2.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_2.aln
+    jobid: 49
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_2.fa
+    wildcards: sample=EEE029_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_5.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_5.aln
+    jobid: 10
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_5.fa
+    wildcards: sample=EEE029_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_10.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_10.aln
+    jobid: 1
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_10.fa
+    wildcards: sample=DGI_65_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_6.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_6.aln
+    jobid: 16
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_6.fa
+    wildcards: sample=EEE029_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_8.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_8.aln
+    jobid: 58
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_8.fa
+    wildcards: sample=DGI_65_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/EEE029_opa_10.fa
+    output: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_10.aln
+    jobid: 37
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/EEE029_opa_10.fa
+    wildcards: sample=EEE029_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_3.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_3.aln
+    jobid: 13
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_3.fa
+    wildcards: sample=DGI_65_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Thu Jan 30 13:31:54 2025]
+localrule mafft:
+    input: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_9.fa
+    output: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_9.aln
+    jobid: 59
+    reason: Updated input files: ../../../data/kit14/opa_sequences_collated/DGI_65_opa_9.fa
+    wildcards: sample=DGI_65_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    1 / 11    1 / 11    1 / 11    1 / 11    1 / 11    1 / 11    2 / 11    2 / 11    2 / 11    2 / 11    2 / 11    2 / 11    3 / 11    3 / 11    3 / 11    3 / 11    3 / 11    3 / 11    4 / 11    4 / 11    4 / 11    4 / 11    4 / 11    4 / 11    5 / 11    5 / 11    5 / 11    5 / 11    5 / 11    5 / 11    6 / 11    6 / 11    6 / 11    6 / 11    6 / 11    6 / 11    7 / 11    7 / 11    7 / 11    7 / 11    8 / 11    8 / 11    7 / 11    7 / 11    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+    8 / 11generating a scoring matrix for nucleotide (dist=200) ... done
+    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10     8 / 11STEP     2 /10     9 / 11    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     3 /10     9 / 11    9 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     2 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     2 /10 STEP     3 /10 STEP     4 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     3 /10 STEP     2 /10 STEP     3 /10 STEP     4 /10 STEP     5 /10 STEP     2 /10 STEP     3 /10 STEP     2 /10 STEP     3 /10 STEP     4 /10 STEP     5 /10 STEP     6 /10 STEP     7 /10 STEP     4 /10 STEP     4 /10 STEP     4 /10 STEP     5 /10 STEP     6 /10 STEP     8 /10 STEP     5 /10 STEP     6 /10 STEP     5 /10 STEP     5 /10 STEP     6 /10 STEP     7 /10 STEP     7 /10 STEP     8 /10 STEP     9 /10 STEP     7 /10 STEP     6 /10 STEP     6 /10 STEP     8 /10 STEP     9 /10 STEP    10 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     8 /10 STEP     7 /10 STEP     7 /10 STEP     9 /10 STEP    10 /10 STEP     9 /10 STEP     8 /10 STEP     9 /10 STEP     8 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP    10 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP    10 /10 STEP    10 /10 STEP     9 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP    10 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11
+    0 / 11
+Segment   1/  1    1- 804
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0 
+    0 / 11
+Segment   1/  1    1- 788
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0 
+Segment   1/  1    1- 809
+STEP 001-001-0 
+    0 / 11 identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0 
+Segment   1/  1    1- 815
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+ identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0 
+    0 / 11
+    0 / 11
+Segment   1/  1    1- 823
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0 
+Segment   1/  1    1- 833
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+ identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+ identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+
+ identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+Strategy:
+Strategy:
+Strategy:
+Strategy:
+
+ L-INS-i L-INS-i L-INS-i L-INS-i (Probably most accurate, very slow)
+ (Probably most accurate, very slow)
+ (Probably most accurate, very slow)
+ (Probably most accurate, very slow)
+Strategy:
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+
+ L-INS-i
+If unsure which option to use, try 'mafft --auto input > output'.
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ (Probably most accurate, very slow)
+If unsure which option to use, try 'mafft --auto input > output'.
+If unsure which option to use, try 'mafft --auto input > output'.
+
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+Strategy:
+If unsure which option to use, try 'mafft --auto input > output'.
+ L-INS-iIt tends to insert more gaps into gap-rich regions than previous versions.
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ (Probably most accurate, very slow)
+It tends to insert more gaps into gap-rich regions than previous versions.
+It tends to insert more gaps into gap-rich regions than previous versions.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+
+To disable this change, add the --leavegappyregion option.
+To disable this change, add the --leavegappyregion option.
+To disable this change, add the --leavegappyregion option.
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+If unsure which option to use, try 'mafft --auto input > output'.
+
+
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+It tends to insert more gaps into gap-rich regions than previous versions.
+
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+To disable this change, add the --leavegappyregion option.
+It tends to insert more gaps into gap-rich regions than previous versions.
+
+To disable this change, add the --leavegappyregion option.
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Thu Jan 30 13:32:00 2025]
+Finished job 61.
+1 of 22 steps (5%) done
+[Thu Jan 30 13:32:00 2025]
+Finished job 32.
+2 of 22 steps (9%) done
+[Thu Jan 30 13:32:00 2025]
+Finished job 31.
+3 of 22 steps (14%) done
+[Thu Jan 30 13:32:00 2025]
+Finished job 46.
+4 of 22 steps (18%) done
+[Thu Jan 30 13:32:00 2025]
+Finished job 26.
+5 of 22 steps (23%) done
+[Thu Jan 30 13:32:00 2025]
+Finished job 19.
+6 of 22 steps (27%) done
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    1 / 11    1 / 11    1 / 11    1 / 11    1 / 11    1 / 11    2 / 11    2 / 11    2 / 11    2 / 11    2 / 11    2 / 11    3 / 11    3 / 11    3 / 11    3 / 11    3 / 11    3 / 11    4 / 11    4 / 11    4 / 11    4 / 11    4 / 11    5 / 11    4 / 11    5 / 11    5 / 11    5 / 11    5 / 11    6 / 11    5 / 11    6 / 11    6 / 11    6 / 11    6 / 11    7 / 11    7 / 11    6 / 11    8 / 11    7 / 11    7 / 11    8 / 11    8 / 11    7 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    9 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10     7 / 11    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    8 / 11STEP     2 /10 STEP     3 /10     9 / 11    8 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10     9 / 11STEP     4 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    9 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     2 /10 STEP     3 /10 STEP     2 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     5 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     2 /10 STEP     3 /10 STEP     4 /10 STEP     3 /10 STEP     4 /10 STEP     6 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     2 /10 STEP     4 /10 STEP     5 /10 STEP     5 /10 STEP     7 /10 STEP     2 /10 STEP     3 /10 STEP     5 /10 STEP     6 /10 STEP     6 /10 STEP     8 /10 STEP     9 /10 STEP     3 /10 STEP     4 /10 STEP     4 /10 STEP     6 /10 STEP     7 /10 STEP     7 /10 STEP    10 /10 STEP     5 /10 STEP     5 /10 STEP     7 /10 STEP     8 /10 STEP     8 /10 STEP     9 /10 STEP     8 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     6 /10 STEP     6 /10 STEP     9 /10 STEP    10 /10 STEP     9 /10 STEP     7 /10 STEP     7 /10 STEP    10 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP    10 /10 STEP     8 /10 STEP     8 /10 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11
+Segment   1/  1    1- 810
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     9 /10  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 STEP     9 /10 STEP    10 /10  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11STEP    10 /10 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+Segment   1/  1    1- 819
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 
+    0 / 11
+    0 / 11
+Segment   1/  1    1- 843
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 
+Segment   1/  1    1- 805
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+ identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 001-005-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+ identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0 
+    0 / 11
+Segment   1/  1    1- 844
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+ identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+ identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1     0 / 11
+ identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1 
+Segment   1/  1    1- 894
+STEP 001-001-0  identical.   STEP 001-001-1  identical.    identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   STEP 002-009-0  identical.   
+Converged.
+
+done
+Strategy:
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+STEP 001-002-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   
+Converged.
+
+done
+ L-INS-idvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1 
+ identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  (Probably most accurate, very slow)
+ identical.    identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1 
+
+Strategy:
+
+Converged.
+
+done
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1 Strategy:
+ L-INS-iStrategy:
+
+ identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1 
+ L-INS-i identical.   
+Converged.
+
+done
+ L-INS-i (Probably most accurate, very slow)
+If unsure which option to use, try 'mafft --auto input > output'.
+Strategy:
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ (Probably most accurate, very slow)
+ (Probably most accurate, very slow)
+ L-INS-iFor more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+ (Probably most accurate, very slow)
+
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+If unsure which option to use, try 'mafft --auto input > output'.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+
+
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+If unsure which option to use, try 'mafft --auto input > output'.
+It tends to insert more gaps into gap-rich regions than previous versions.
+If unsure which option to use, try 'mafft --auto input > output'.
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+To disable this change, add the --leavegappyregion option.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+
+
+
+It tends to insert more gaps into gap-rich regions than previous versions.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+Strategy:
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+To disable this change, add the --leavegappyregion option.
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+ L-INS-iIt tends to insert more gaps into gap-rich regions than previous versions.
+
+It tends to insert more gaps into gap-rich regions than previous versions.
+ (Probably most accurate, very slow)
+To disable this change, add the --leavegappyregion option.
+To disable this change, add the --leavegappyregion option.
+To disable this change, add the --leavegappyregion option.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+
+
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Thu Jan 30 13:32:07 2025]
+Finished job 20.
+7 of 22 steps (32%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Thu Jan 30 13:32:07 2025]
+Finished job 48.
+8 of 22 steps (36%) done
+[Thu Jan 30 13:32:07 2025]
+Finished job 55.
+9 of 22 steps (41%) done
+[Thu Jan 30 13:32:07 2025]
+Finished job 41.
+10 of 22 steps (45%) done
+[Thu Jan 30 13:32:07 2025]
+Finished job 62.
+11 of 22 steps (50%) done
+[Thu Jan 30 13:32:07 2025]
+Finished job 54.
+12 of 22 steps (55%) done
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    1 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    1 / 11    1 / 11    1 / 11    1 / 11    2 / 11    1 / 11    2 / 11    2 / 11    2 / 11    3 / 11    2 / 11    3 / 11    3 / 11    2 / 11    3 / 11    4 / 11    4 / 11    4 / 11    3 / 11    3 / 11    5 / 11    4 / 11    5 / 11    5 / 11    4 / 11    6 / 11    4 / 11    6 / 11    5 / 11    6 / 11    7 / 11    7 / 11    5 / 11    7 / 11    5 / 11    8 / 11    6 / 11    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    6 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10     7 / 11    9 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     2 /10 STEP     2 /10 STEP     3 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    6 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     3 /10 STEP     4 /10     8 / 11STEP     2 /10 STEP     3 /10 STEP     4 /10     7 / 11STEP     5 /10     9 / 11STEP     4 /10     7 / 11STEP     5 /10 STEP     6 /10 STEP     6 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     5 /10 STEP     7 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     7 /10 STEP     8 /10     8 / 11STEP     6 /10     8 / 11STEP     8 /10 STEP     2 /10 STEP     3 /10     9 / 11STEP     9 /10 STEP     7 /10     9 / 11STEP     9 /10 STEP    10 /10 STEP     4 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP    10 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     8 /10 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     5 /10 STEP     9 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     2 /10 STEP     6 /10 STEP    10 /10 STEP     2 /10 STEP     3 /10 STEP     3 /10 STEP     4 /10 STEP     7 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     4 /10 STEP     8 /10 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11
+    0 / 11
+Segment   1/  1    1- 774
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 
+Segment   1/  1    1- 801
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 STEP     5 /10 STEP     5 /10 STEP     9 /10  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0 STEP     6 /10  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     6 /10 
+    0 / 11STEP    10 /10 
+Segment   1/  1    1- 816
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0 STEP     7 /10  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 STEP     7 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+ identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0 STEP     8 /10 STEP     8 /10  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1 STEP     9 /10  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1 minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     9 /10 
+    0 / 11 identical.   
+Converged.
+
+done
+
+Segment   1/  1    1- 819
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1 dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+STEP    10 /10  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1 
+STEP    10 /10 dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 001-004-0  identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1 Strategy:
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+ identical.   
+Converged.
+
+done
+ L-INS-idvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+Strategy:
+ (Probably most accurate, very slow)
+ identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  L-INS-i identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11 (Probably most accurate, very slow)
+
+ identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+
+Strategy:
+
+Segment   1/  1    1- 840
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0 If unsure which option to use, try 'mafft --auto input > output'.
+    0 / 11 Iterative refinement method (<16) with LOCAL pairwise alignment information
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  L-INS-i
+Segment   1/  1    1- 839
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0 For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+ identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  (Probably most accurate, very slow)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+ identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0 
+ identical.   STEP 001-004-1  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0 Strategy:
+ identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1 The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+ L-INS-iIt tends to insert more gaps into gap-rich regions than previous versions.
+ identical.   STEP 002-010-1  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ (Probably most accurate, very slow)
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+To disable this change, add the --leavegappyregion option.
+If unsure which option to use, try 'mafft --auto input > output'.
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+It tends to insert more gaps into gap-rich regions than previous versions.
+
+
+To disable this change, add the --leavegappyregion option.
+If unsure which option to use, try 'mafft --auto input > output'.
+Strategy:
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ L-INS-iFor more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ (Probably most accurate, very slow)
+
+It tends to insert more gaps into gap-rich regions than previous versions.
+
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+To disable this change, add the --leavegappyregion option.
+
+It tends to insert more gaps into gap-rich regions than previous versions.
+Strategy:
+If unsure which option to use, try 'mafft --auto input > output'.
+ L-INS-iTo disable this change, add the --leavegappyregion option.
+
+
+ (Probably most accurate, very slow)
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+If unsure which option to use, try 'mafft --auto input > output'.
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Thu Jan 30 13:32:14 2025]
+Finished job 10.
+13 of 22 steps (59%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Thu Jan 30 13:32:14 2025]
+Finished job 34.
+14 of 22 steps (64%) done
+[Thu Jan 30 13:32:14 2025]
+Finished job 16.
+15 of 22 steps (68%) done
+[Thu Jan 30 13:32:14 2025]
+Finished job 49.
+16 of 22 steps (73%) done
+[Thu Jan 30 13:32:14 2025]
+Finished job 1.
+17 of 22 steps (77%) done
+[Thu Jan 30 13:32:14 2025]
+Finished job 58.
+18 of 22 steps (82%) done
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    1 / 11    1 / 11    2 / 11    2 / 11    3 / 11outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 11    3 / 11    4 / 11    1 / 11    4 / 11    5 / 11    2 / 11    6 / 11    5 / 11    7 / 11    6 / 11    3 / 11    8 / 11    9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+    7 / 11Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10     8 / 11STEP     2 /10 STEP     3 /10     4 / 11STEP     4 /10     9 / 11tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     5 /10 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     6 /10     5 / 11STEP     2 /10 STEP     7 /10 STEP     3 /10 STEP     4 /10 STEP     8 /10 STEP     9 /10 STEP     5 /10 STEP    10 /10     6 / 11STEP     6 /10 
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+STEP     7 /10     7 / 11STEP     8 /10 STEP     9 /10 STEP    10 /10     8 / 11minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+
+    0 / 11    9 / 11
+Segment   1/  1    1- 817
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 tbfast-pair (nuc) Version 7.520
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+ identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0 Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 11
+done.
+
+Progressive alignment ... 
+STEP     1 /10 STEP     2 /10 STEP     3 /10  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1 STEP     4 /10  identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+STEP     5 /10 
+    0 / 11
+Segment   1/  1    1- 843
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1  identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+STEP     6 /10 STEP     7 /10  identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0 
+STEP     8 /10  identical.   STEP 001-007-1  identical.   STEP 001-008-0 STEP     9 /10 STEP    10 /10 Strategy:
+ identical.   STEP 001-008-1  identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  L-INS-i
+done.
+tbfast (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+ identical.   STEP 002-009-0  identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+ (Probably most accurate, very slow)
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+Strategy:
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ L-INS-iminimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 11It tends to insert more gaps into gap-rich regions than previous versions.
+
+Segment   1/  1    1- 782
+STEP 001-001-0  identical.   STEP 001-001-1  identical.   STEP 001-002-0  identical.   STEP 001-002-1  (Probably most accurate, very slow)
+ identical.   STEP 001-003-0  identical.   STEP 001-003-1  identical.   STEP 001-004-0  identical.   STEP 001-004-1 To disable this change, add the --leavegappyregion option.
+ identical.   STEP 001-005-0  identical.   STEP 001-005-1  identical.   STEP 001-006-0  identical.   STEP 001-006-1  identical.   STEP 001-007-0  identical.   STEP 001-007-1  identical.   STEP 001-008-0  identical.   STEP 001-008-1  Iterative refinement method (<16) with LOCAL pairwise alignment information
+ identical.   STEP 001-009-0  identical.   STEP 001-009-1  identical.   STEP 001-010-1  identical.   STEP 002-010-1  identical.   STEP 002-009-0 
+ identical.   STEP 002-009-1  identical.   
+Converged.
+
+done
+
+dvtditr (nuc) Version 7.520
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+Strategy:
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+ L-INS-iIt tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+ (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Thu Jan 30 13:32:17 2025]
+Finished job 37.
+19 of 22 steps (86%) done
+[Thu Jan 30 13:32:17 2025]
+Finished job 13.
+20 of 22 steps (91%) done
+[Thu Jan 30 13:32:17 2025]
+Finished job 59.
+21 of 22 steps (95%) done
+Select jobs to execute...
+
+[Thu Jan 30 13:32:17 2025]
+localrule all:
+    input: ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_11.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/.ipynb_checkpoints/DGI_65a_II_opa_1-checkpoint.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/EEE029a_VI_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_11.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029b_VI_opa_11.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65a_II_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65b_IV_opa_10.aln
+    jobid: 0
+    reason: Input files updated by another job: ../../../data/kit14/opa_sequences_aligned/EEE029_opa_2.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_11.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_8.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_1.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_9.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_10.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_5.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/EEE029_opa_3.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_6.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_7.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_4.aln, ../../../data/kit14/opa_sequences_aligned/DGI_65_opa_2.aln
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Thu Jan 30 13:32:17 2025]
+Finished job 0.
+22 of 22 steps (100%) done
+Complete log: .snakemake/log/2025-01-30T132943.967367.snakemake.log

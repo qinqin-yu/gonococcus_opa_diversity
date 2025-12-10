@@ -1,0 +1,41 @@
+SAMPLES, = glob_wildcards("fastqs/{sample}.fastq.gz")
+
+rule all:
+    input:
+        expand("flye/{sample}/assembly.fasta", sample = SAMPLES),
+        expand("medaka_polished/{sample}/consensus.fasta", sample = SAMPLES)
+
+rule flye:
+    input:
+        "fastqs/{sample}.fastq.gz"
+    output:
+        "flye/{sample}/assembly.fasta"
+    resources:
+        mem_mb=20000,
+        time=240
+    threads: 20
+    conda:
+        "conda_envs/flye.yml"
+    shell:
+        """
+            mkdir -p flye
+            flye --nano-hq {input} --out-dir flye/{wildcards.sample} -t 20
+        """
+
+rule medaka:
+    input:
+        fastq="fastqs/{sample}.fastq.gz",
+        assembly="flye/{sample}/assembly.fasta"
+    output:
+        "medaka_polished/{sample}/consensus.fasta"
+    resources:
+        mem_mb=10000,
+        time=120
+    threads: 1
+    conda:
+        "conda_envs/medaka.yml"
+    shell:
+        """
+            mkdir -p medaka_polished
+            medaka_consensus -i {input.fastq} -d {input.assembly} -o medaka_polished/{wildcards.sample} -t 1 -m r1041_e82_400bps_sup_v5.0.0
+        """

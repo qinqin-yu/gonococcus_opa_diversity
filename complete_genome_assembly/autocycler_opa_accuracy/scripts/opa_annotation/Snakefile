@@ -1,0 +1,46 @@
+SAMPLES, = glob_wildcards("assemblies/{sample}.fasta")
+SAMPLES = list(set(SAMPLES))
+
+localrules: all, rotate_origin, opa_id, parse_annotation
+
+print(SAMPLES)
+
+rule all:
+    input:
+        expand("assemblies_shifted/{sample}.fa", sample=SAMPLES),
+        expand("opa_sequences/{sample}.fa", sample=SAMPLES),
+        expand("opa_sequences_no_repeats/{sample}.fa", sample=SAMPLES),
+        expand("opa_locations/{sample}.csv", sample=SAMPLES)
+
+rule rotate_origin:
+    input:
+        assembly_file = "assemblies/{sample}.fasta",
+    output: 
+        "assemblies_shifted/{sample}.fa"
+    params:
+        name="{sample}"
+    log:
+        "logs/fasta_shift/{sample}.log"
+    shell:
+        """
+        mkdir -p assemblies_shifted/
+        # Match to first 90 bases of dnaA in FA1090 reference sequence (NC_002946.2) allowing for up to 5 mismatches (mening has a very similar sequence)
+        scripts/rotate/rotate -s ATGACATTAGCAGAGTTTTGGCCGCTGTGCCTCCGCCGTCTTCACGATATGTTGCCTCACGGGCAGTTTGCGCAATGGATTGCGCCCCTT -m 5 {input.assembly_file} > {output}
+        """
+        
+rule opa_id:
+    input:
+        "assemblies_shifted/{sample}.fa"
+    output: 
+        "opa_sequences/{sample}.fa",
+        "opa_sequences_no_repeats/{sample}.fa",
+        "opa_locations/{sample}.csv"
+    conda:
+        "conda_envs/opa_id.yml"
+    shell:
+        """
+        mkdir -p opa_sequences/
+        mkdir -p opa_sequences_no_repeats/
+        mkdir -p opa_locations/
+        scripts/identify_opa_genes.py {input}
+        """

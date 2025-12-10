@@ -1,0 +1,212 @@
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+[INFO][0m read sequences ...
+[INFO][0m 2 sequences loaded
+[INFO][0m sorting ...
+[INFO][0m output ...
+
+[93m[1m[4mAssembly comparison tool[0m [2m(2024-11-21 17:36:26)[0m
+[2m    This script produces a human-readable file showing all of the differences[0m
+[2mbetween two alternative assemblies of a genome. This can help to spot[0m
+[2mtroublesome regions of the genome with a large number of changes.[0m
+
+Assembly 1:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/DGI_65.polypolish.pypolca.fasta
+
+Assembly 2:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/DGI_65_a.polypolish.pypolca.fasta
+
+Settings:
+  --padding 15
+  --merge 30
+  --aligner mappy
+
+
+[93m[1m[4mLoading assemblies[0m [2m(2024-11-21 17:36:26)[0m
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/DGI_65.polypolish.pypolca.fasta
+  contig_1: 2,219,804 bp
+  contig_2: 39,054 bp
+
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/DGI_65_a.polypolish.pypolca.fasta
+  contig_1: 2,219,770 bp
+  contig_2: 39,054 bp
+
+
+[93m[1m[4mAligning sequences[0m [2m(2024-11-21 17:36:26)[0m
+Aligning contig_1 to contig_1:
+  38 differences
+  worst 10 bp identity:   0.0%
+  worst 100 bp identity:  68.0%
+  worst 1000 bp identity: 96.8%
+
+
+Aligning contig_2 to contig_2:
+  0 differences
+  worst 10 bp identity:   100.0%
+  worst 100 bp identity:  100.0%
+  worst 1000 bp identity: 100.0%
+
+
+
+[93m[1m[4mFinished![0m [2m(2024-11-21 17:36:30)[0m
+Time to run: 0:00:03.926500
+
+
+[93m[1m[4mAssembly comparison tool[0m [2m(2024-11-21 17:36:30)[0m
+[2m    This script produces a human-readable file showing all of the differences[0m
+[2mbetween two alternative assemblies of a genome. This can help to spot[0m
+[2mtroublesome regions of the genome with a large number of changes.[0m
+
+Assembly 1:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/DGI_65.polypolish.pypolca.fasta
+
+Assembly 2:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/DGI_65_b.polypolish.pypolca.fasta
+
+Settings:
+  --padding 15
+  --merge 30
+  --aligner mappy
+
+
+[93m[1m[4mLoading assemblies[0m [2m(2024-11-21 17:36:30)[0m
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/DGI_65.polypolish.pypolca.fasta
+  contig_1: 2,219,804 bp
+  contig_2: 39,054 bp
+
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/DGI_65_b.polypolish.pypolca.fasta
+  contig_1: 2,219,769 bp
+  contig_2: 39,056 bp
+
+
+[93m[1m[4mAligning sequences[0m [2m(2024-11-21 17:36:30)[0m
+Aligning contig_1 to contig_1:
+  47 differences
+  worst 10 bp identity:   0.0%
+  worst 100 bp identity:  68.0%
+  worst 1000 bp identity: 96.8%
+
+
+Aligning contig_2 to contig_2:
+  2 differences
+  worst 10 bp identity:   80.0%
+  worst 100 bp identity:  98.0%
+  worst 1000 bp identity: 99.8%
+
+
+
+[93m[1m[4mFinished![0m [2m(2024-11-21 17:36:34)[0m
+Time to run: 0:00:03.958475
+
+
+[93m[1m[4mAssembly comparison tool[0m [2m(2024-11-21 17:36:34)[0m
+[2m    This script produces a human-readable file showing all of the differences[0m
+[2mbetween two alternative assemblies of a genome. This can help to spot[0m
+[2mtroublesome regions of the genome with a large number of changes.[0m
+
+Assembly 1:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/EEE029.polypolish.pypolca.fasta
+
+Assembly 2:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/EEE029_a.polypolish.pypolca.fasta
+
+Settings:
+  --padding 15
+  --merge 30
+  --aligner mappy
+
+
+[93m[1m[4mLoading assemblies[0m [2m(2024-11-21 17:36:34)[0m
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/EEE029.polypolish.pypolca.fasta
+  contig_1: 2,221,899 bp
+  contig_2: 8,414 bp
+
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/EEE029_a.polypolish.pypolca.fasta
+  contig_1: 2,221,894 bp
+  contig_2: 8,414 bp
+
+
+[93m[1m[4mAligning sequences[0m [2m(2024-11-21 17:36:34)[0m
+Aligning contig_1 to contig_1:
+  16 differences
+  worst 10 bp identity:   50.0%
+  worst 100 bp identity:  95.0%
+  worst 1000 bp identity: 99.5%
+
+
+Aligning contig_2 to contig_2:
+  0 differences
+  worst 10 bp identity:   100.0%
+  worst 100 bp identity:  100.0%
+  worst 1000 bp identity: 100.0%
+
+
+
+[93m[1m[4mFinished![0m [2m(2024-11-21 17:36:38)[0m
+Time to run: 0:00:03.952248
+
+
+[93m[1m[4mAssembly comparison tool[0m [2m(2024-11-21 17:36:39)[0m
+[2m    This script produces a human-readable file showing all of the differences[0m
+[2mbetween two alternative assemblies of a genome. This can help to spot[0m
+[2mtroublesome regions of the genome with a large number of changes.[0m
+
+Assembly 1:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/EEE029.polypolish.pypolca.fasta
+
+Assembly 2:
+  /n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/EEE029_b.polypolish.pypolca.fasta
+
+Settings:
+  --padding 15
+  --merge 30
+  --aligner mappy
+
+
+[93m[1m[4mLoading assemblies[0m [2m(2024-11-21 17:36:39)[0m
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_sorted/EEE029.polypolish.pypolca.fasta
+  contig_1: 2,221,899 bp
+  contig_2: 8,414 bp
+
+/n/netscratch/grad_lab/Lab/qinqinyu/20241121_compare_assemblies/pypolca_parent_with_evolved_sorted/EEE029_b.polypolish.pypolca.fasta
+  contig_1: 2,221,890 bp
+  contig_2: 8,414 bp
+
+
+[93m[1m[4mAligning sequences[0m [2m(2024-11-21 17:36:39)[0m
+Aligning contig_1 to contig_1:
+  13 differences
+  worst 10 bp identity:   50.0%
+  worst 100 bp identity:  95.0%
+  worst 1000 bp identity: 99.5%
+
+
+Aligning contig_2 to contig_2:
+  0 differences
+  worst 10 bp identity:   100.0%
+  worst 100 bp identity:  100.0%
+  worst 1000 bp identity: 100.0%
+
+
+
+[93m[1m[4mFinished![0m [2m(2024-11-21 17:36:42)[0m
+Time to run: 0:00:03.966941
+

@@ -1,0 +1,2 @@
+/var/slurmd/spool/slurmd/job58934816/slurm_script: line 14: DGI_65: command not found
+/var/slurmd/spool/slurmd/job58934816/slurm_script: line 18: ../data/compare_assemblies/flye_medaka/DGI_65.txt: No such file or directory

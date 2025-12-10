@@ -1,0 +1,13 @@
+name: mafft
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+  - nodefaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - libgcc-ng=13.1.0=he5830b7_0
+  - libgomp=13.1.0=he5830b7_0
+  - mafft=7.520=h031d066_2

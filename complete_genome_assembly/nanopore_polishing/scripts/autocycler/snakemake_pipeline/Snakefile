@@ -1,0 +1,96 @@
+SAMPLES, = glob_wildcards("fastqs/{sample}.fastq.gz")
+READ_SETS=["01", "02", "03", "04"]
+ASSEMBLERS=["canu", "flye", "miniasm", "necat", "nextdenovo", "raven"]
+genome_size = 2200000
+
+localrules: all, autocycler_table
+
+rule all:
+    input:
+        expand("consensus_assemblies/{sample}.fasta", sample = SAMPLES),
+        "metrics.tsv"
+
+rule autocycler_subsample:
+    input:
+        "fastqs/{sample}.fastq.gz"
+    output:
+        expand("autocycler/{{sample}}/subsampled_reads/sample_{read_set}.fastq", read_set=READ_SETS)
+    params:
+        genome_size=genome_size
+    conda:
+        "conda_envs/autocycler.yml"
+    shell:
+        """
+            mkdir -p autocycler
+
+            # Step 1: subsample the long-read set into multiple files
+            scripts/autocycler subsample --reads {input} --out_dir autocycler/{wildcards.sample}/subsampled_reads --genome_size {params.genome_size} 
+        """
+rule autocycler_assembly:
+    input:
+        "autocycler/{sample}/subsampled_reads/sample_{read_set}.fastq"
+    output:
+        "autocycler/{sample}/assemblies/{assembler}_{read_set}.fasta"
+    params:
+        genome_size=genome_size
+    resources:
+        mem_mb=20000,
+        time=360,
+        cpus=lambda wildcards, attempt: attempt * 4
+    conda:
+        "conda_envs/autocycler.yml"
+    shell:
+        """
+            # Step 2: assemble each subsampled file
+            mkdir -p autocycler/{wildcards.sample}/assemblies
+            scripts/{wildcards.assembler}.sh autocycler/{wildcards.sample}/subsampled_reads/sample_{wildcards.read_set}.fastq autocycler/{wildcards.sample}/assemblies/{wildcards.assembler}_{wildcards.read_set} {resources.cpus} {params.genome_size}
+        """
+
+rule autocycler_combine:
+    input:
+        expand("autocycler/{{sample}}/assemblies/{assembler}_{read_set}.fasta", assembler=ASSEMBLERS, read_set=READ_SETS)
+    output:
+        "consensus_assemblies/{sample}.fasta"
+    resources:
+        mem_mb=20000
+    conda:
+        "conda_envs/autocycler.yml"
+    shell:
+        """
+            # Optional step: remove the subsampled reads to save space
+            rm -f autocycler/{wildcards.sample}/subsampled_reads/*.fastq
+
+            # Step 3: compress the input assemblies into a unitig graph
+            scripts/autocycler compress -i autocycler/{wildcards.sample}/assemblies -a autocycler/{wildcards.sample}/autocycler_out
+
+            # Step 4: cluster the input contigs into putative genomic sequences
+            scripts/autocycler cluster -a autocycler/{wildcards.sample}/autocycler_out
+
+            # Steps 5 and 6: trim and resolve each QC-pass cluster
+            for c in autocycler/{wildcards.sample}/autocycler_out/clustering/qc_pass/cluster_*; do
+                scripts/autocycler trim -c "$c"
+                scripts/autocycler resolve -c "$c"
+            done
+
+            # Step 7: combine resolved clusters into a final assembly
+            scripts/autocycler combine -a autocycler/{wildcards.sample}/autocycler_out -i autocycler/{wildcards.sample}/autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa
+
+            mkdir -p consensus_assemblies
+            cp autocycler/{wildcards.sample}/autocycler_out/consensus_assembly.fasta consensus_assemblies/{wildcards.sample}.fasta
+        """
+
+rule autocycler_table:
+    input:
+        expand("autocycler/{sample}/autocycler_out/consensus_assembly.yaml", sample=SAMPLES),
+        expand("autocycler/{sample}/autocycler_out/input_assemblies.yaml", sample=SAMPLES)
+    output:
+        "metrics.tsv"
+    conda:
+        "conda_envs/autocycler.yml"
+    shell:
+        """
+            scripts/autocycler table > metrics.tsv
+            for sample in autocycler/*; do
+                scripts/autocycler table -a "$sample" -n "$sample" >> metrics.tsv  # append a TSV row
+            done
+        """

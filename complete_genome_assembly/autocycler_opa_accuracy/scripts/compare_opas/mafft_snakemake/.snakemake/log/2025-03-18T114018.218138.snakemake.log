@@ -1,0 +1,1710 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job      count
+-----  -------
+all          1
+mafft      119
+total      120
+
+Select jobs to execute...
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_1.aln
+    jobid: 86
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_1.aln
+    wildcards: sample=FFF007_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_10.aln
+    jobid: 115
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_10.aln
+    wildcards: sample=EEE029_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_1.aln
+    jobid: 31
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_1.aln
+    wildcards: sample=EEE029_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_4.aln
+    jobid: 87
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_4.aln
+    wildcards: sample=CCC020_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_9.aln
+    jobid: 4
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_9.aln
+    wildcards: sample=GCGS0313_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_1.aln
+    jobid: 60
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_1.aln
+    wildcards: sample=FA1090_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_4.aln
+    jobid: 116
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_4.aln
+    wildcards: sample=GCGS0431_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_5.aln
+    jobid: 32
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_5.aln
+    wildcards: sample=EEE023_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_7.aln
+    jobid: 88
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_7.aln
+    wildcards: sample=FFF007_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_9.aln
+    jobid: 5
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_9.aln
+    wildcards: sample=EEE023_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_6.aln
+    jobid: 61
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_6.aln
+    wildcards: sample=FFF007_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_3.aln
+    jobid: 117
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_3.aln
+    wildcards: sample=FFF007_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_2.aln
+    jobid: 89
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_2.aln
+    wildcards: sample=EEE023_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_3.aln
+    jobid: 33
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_3.aln
+    wildcards: sample=GCGS0373_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_9.aln
+    jobid: 15
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_9.aln
+    wildcards: sample=GCGS0373_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_2.aln
+    jobid: 62
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_2.aln
+    wildcards: sample=GCGS0313_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_7.aln
+    jobid: 118
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_7.aln
+    wildcards: sample=GCGS0373_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_9.aln
+    jobid: 58
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_9.aln
+    wildcards: sample=FFF007_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_8.aln
+    jobid: 65
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_8.aln
+    wildcards: sample=GCGS0313_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_3.aln
+    jobid: 94
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_3.aln
+    wildcards: sample=EEE023_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_2.aln
+    jobid: 11
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_2.aln
+    wildcards: sample=FFF007_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_7.aln
+    jobid: 67
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_7.aln
+    wildcards: sample=EEE004_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_9.aln
+    jobid: 39
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_9.aln
+    wildcards: sample=Ng_188_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_1.aln
+    jobid: 95
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_1.aln
+    wildcards: sample=Ng_188_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_10.aln
+    jobid: 7
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_10.aln
+    wildcards: sample=FFF007_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_5.aln
+    jobid: 68
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_5.aln
+    wildcards: sample=FFF007_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_9.aln
+    jobid: 40
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_9.aln
+    wildcards: sample=EEE004_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_2.aln
+    jobid: 96
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_2.aln
+    wildcards: sample=GCGS0373_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_7.aln
+    jobid: 2
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_7.aln
+    wildcards: sample=GCGS0431_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_10.aln
+    jobid: 8
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_10.aln
+    wildcards: sample=CCC020_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_4.aln
+    jobid: 69
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_4.aln
+    wildcards: sample=FA1090_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_9.aln
+    jobid: 41
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_9.aln
+    wildcards: sample=FA1090_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_2.aln
+    jobid: 97
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_2.aln
+    wildcards: sample=CCC020_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_8.aln
+    jobid: 9
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_8.aln
+    wildcards: sample=CCC020_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_11.aln
+    jobid: 70
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_11.aln
+    wildcards: sample=EEE023_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_5.aln
+    jobid: 42
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_5.aln
+    wildcards: sample=UMASS-DGI_65_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_7.aln
+    jobid: 98
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_7.aln
+    wildcards: sample=FA1090_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_10.aln
+    jobid: 10
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_10.aln
+    wildcards: sample=Ng_188_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_1.aln
+    jobid: 71
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_1.aln
+    wildcards: sample=GCGS0313_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_10.aln
+    jobid: 43
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_10.aln
+    wildcards: sample=GCGS0431_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_2.aln
+    jobid: 99
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_2.aln
+    wildcards: sample=GCGS0431_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:26 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_9.aln
+    jobid: 16
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_9.aln
+    wildcards: sample=EEE029_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_8.aln
+    jobid: 72
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_8.aln
+    wildcards: sample=GCGS0373_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_8.aln
+    jobid: 44
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_8.aln
+    wildcards: sample=FA1090_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_6.aln
+    jobid: 100
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_6.aln
+    wildcards: sample=EEE004_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_1.aln
+    jobid: 17
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_1.aln
+    wildcards: sample=CCC020_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_11.aln
+    jobid: 73
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_11.aln
+    wildcards: sample=EEE029_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_11.aln
+    jobid: 45
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_11.aln
+    wildcards: sample=Ng_188_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_8.aln
+    jobid: 101
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_8.aln
+    wildcards: sample=GCGS0431_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_5.aln
+    jobid: 18
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_5.aln
+    wildcards: sample=GCGS0431_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_6.aln
+    jobid: 74
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_6.aln
+    wildcards: sample=GCGS0431_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_6.aln
+    jobid: 46
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_6.aln
+    wildcards: sample=GCGS0313_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_3.aln
+    jobid: 102
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_3.aln
+    wildcards: sample=Ng_188_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_4.aln
+    jobid: 19
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_4.aln
+    wildcards: sample=GCGS0373_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_10.aln
+    jobid: 75
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_10.aln
+    wildcards: sample=EEE004_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_5.aln
+    jobid: 47
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_5.aln
+    wildcards: sample=FA1090_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_6.aln
+    jobid: 103
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_6.aln
+    wildcards: sample=EEE023_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_5.aln
+    jobid: 20
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_5.aln
+    wildcards: sample=EEE029_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_5.aln
+    jobid: 76
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_5.aln
+    wildcards: sample=GCGS0373_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_6.aln
+    jobid: 48
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_6.aln
+    wildcards: sample=Ng_188_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_3.aln
+    jobid: 104
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_3.aln
+    wildcards: sample=EEE029_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_3.aln
+    jobid: 21
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_3.aln
+    wildcards: sample=GCGS0431_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_8.aln
+    jobid: 77
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_8.aln
+    wildcards: sample=Ng_188_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_1.aln
+    jobid: 49
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_1.aln
+    wildcards: sample=GCGS0431_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_5.aln
+    jobid: 105
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_5.aln
+    wildcards: sample=Ng_188_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_6.aln
+    jobid: 22
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_6.aln
+    wildcards: sample=GCGS0373_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_11.aln
+    jobid: 78
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_11.aln
+    wildcards: sample=FFF007_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_4.aln
+    jobid: 50
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_4.aln
+    wildcards: sample=EEE029_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_11.aln
+    jobid: 106
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_11.aln
+    wildcards: sample=EEE004_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_5.aln
+    jobid: 79
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_5.aln
+    wildcards: sample=CCC020_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_11.aln
+    jobid: 23
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_11.aln
+    wildcards: sample=GCGS0313_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_6.aln
+    jobid: 107
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_6.aln
+    wildcards: sample=CCC020_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_2.aln
+    jobid: 51
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_2.aln
+    wildcards: sample=EEE004_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_7.aln
+    jobid: 24
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_7.aln
+    wildcards: sample=UMASS-DGI_65_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_2.aln
+    jobid: 80
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_2.aln
+    wildcards: sample=UMASS-DGI_65_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_3.aln
+    jobid: 52
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_3.aln
+    wildcards: sample=EEE004_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_7.aln
+    jobid: 108
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_7.aln
+    wildcards: sample=EEE029_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_5.aln
+    jobid: 25
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_5.aln
+    wildcards: sample=GCGS0313_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_1.aln
+    jobid: 81
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_1.aln
+    wildcards: sample=GCGS0373_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_8.aln
+    jobid: 53
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_8.aln
+    wildcards: sample=EEE004_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_2.aln
+    jobid: 109
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_2.aln
+    wildcards: sample=EEE029_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_5.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_5.aln
+    jobid: 26
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_5.aln
+    wildcards: sample=EEE004_opa_5
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_8.aln
+    jobid: 82
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_8.aln
+    wildcards: sample=FFF007_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_1.aln
+    jobid: 54
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_1.aln
+    wildcards: sample=EEE023_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_7.aln
+    jobid: 110
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_7.aln
+    wildcards: sample=GCGS0313_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_7.aln
+    jobid: 27
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_7.aln
+    wildcards: sample=Ng_188_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_2.aln
+    jobid: 83
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_2.aln
+    wildcards: sample=Ng_188_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_3.aln
+    jobid: 55
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_3.aln
+    wildcards: sample=CCC020_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_1.aln
+    jobid: 111
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_1.aln
+    wildcards: sample=UMASS-DGI_65_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_7.aln
+    jobid: 28
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_7.aln
+    wildcards: sample=EEE023_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_4.aln
+    jobid: 84
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_4.aln
+    wildcards: sample=EEE004_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_8.aln
+    jobid: 14
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_8.aln
+    wildcards: sample=EEE023_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_11.aln
+    jobid: 56
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_11.aln
+    wildcards: sample=GCGS0431_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_6.aln
+    jobid: 112
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_6.aln
+    wildcards: sample=EEE029_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_10.aln
+    jobid: 29
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_10.aln
+    wildcards: sample=EEE023_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_3.aln
+    jobid: 85
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_3.aln
+    wildcards: sample=GCGS0313_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_3.aln
+    jobid: 1
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_3.aln
+    wildcards: sample=FA1090_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE029_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/EEE029_opa_8.aln
+    jobid: 57
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE029_opa_8.aln
+    wildcards: sample=EEE029_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0373_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0373_opa_10.aln
+    jobid: 113
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0373_opa_10.aln
+    wildcards: sample=GCGS0373_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+
+[Tue Mar 18 11:40:27 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_8.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_8.aln
+    jobid: 114
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_8.aln
+    wildcards: sample=UMASS-DGI_65_opa_8
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:01 2025]
+Finished job 4.
+1 of 120 steps (1%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:41:02 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_7.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_7.aln
+    jobid: 93
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_7.aln
+    wildcards: sample=CCC020_opa_7
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:41:02 2025]
+Finished job 86.
+2 of 120 steps (2%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:02 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FFF007_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/FFF007_opa_4.aln
+    jobid: 30
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FFF007_opa_4.aln
+    wildcards: sample=FFF007_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:03 2025]
+Finished job 31.
+3 of 120 steps (2%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:03 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_6.aln
+    jobid: 63
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_6.aln
+    wildcards: sample=FA1090_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:04 2025]
+Finished job 60.
+4 of 120 steps (3%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:41:04 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_10.aln
+    jobid: 119
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_10.aln
+    wildcards: sample=UMASS-DGI_65_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:41:04 2025]
+Finished job 115.
+5 of 120 steps (4%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:04 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_6.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_6.aln
+    jobid: 13
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_6.aln
+    wildcards: sample=UMASS-DGI_65_opa_6
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:05 2025]
+Finished job 87.
+6 of 120 steps (5%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:05 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0431_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0431_opa_9.aln
+    jobid: 66
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0431_opa_9.aln
+    wildcards: sample=GCGS0431_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:37 2025]
+Finished job 5.
+7 of 120 steps (6%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:37 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_9.aln
+    jobid: 38
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_9.aln
+    wildcards: sample=CCC020_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:38 2025]
+Finished job 32.
+8 of 120 steps (7%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:41:39 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/Ng_188_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/Ng_188_opa_4.aln
+    jobid: 12
+    reason: Missing output files: ../../../data/opa_sequences_aligned/Ng_188_opa_4.aln
+    wildcards: sample=Ng_188_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:41:39 2025]
+Finished job 116.
+9 of 120 steps (8%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:41:39 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_3.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_3.aln
+    jobid: 91
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_3.aln
+    wildcards: sample=UMASS-DGI_65_opa_3
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:41:39 2025]
+Finished job 61.
+10 of 120 steps (8%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:39 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_9.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_9.aln
+    jobid: 35
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_9.aln
+    wildcards: sample=UMASS-DGI_65_opa_9
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:41:40 2025]
+Finished job 117.
+11 of 120 steps (9%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:41:40 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/UMASS-DGI_65_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_4.aln
+    jobid: 92
+    reason: Missing output files: ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_4.aln
+    wildcards: sample=UMASS-DGI_65_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:41:40 2025]
+Finished job 88.
+12 of 120 steps (10%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:41:41 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE023_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/EEE023_opa_4.aln
+    jobid: 36
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE023_opa_4.aln
+    wildcards: sample=EEE023_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:15 2025]
+Finished job 62.
+13 of 120 steps (11%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:42:15 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_2.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_2.aln
+    jobid: 59
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_2.aln
+    wildcards: sample=FA1090_opa_2
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:42:15 2025]
+Finished job 58.
+14 of 120 steps (12%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+
+[Tue Mar 18 11:42:16 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_11.aln
+    jobid: 3
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_11.aln
+    wildcards: sample=FA1090_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:42:16 2025]
+Finished job 89.
+15 of 120 steps (12%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:42:16 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/FA1090_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/FA1090_opa_10.aln
+    jobid: 34
+    reason: Missing output files: ../../../data/opa_sequences_aligned/FA1090_opa_10.aln
+    wildcards: sample=FA1090_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:16 2025]
+Finished job 33.
+16 of 120 steps (13%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:42:17 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_10.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_10.aln
+    jobid: 90
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_10.aln
+    wildcards: sample=GCGS0313_opa_10
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:18 2025]
+Finished job 118.
+17 of 120 steps (14%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:42:18 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/EEE004_opa_1.fa
+    output: ../../../data/opa_sequences_aligned/EEE004_opa_1.aln
+    jobid: 37
+    reason: Missing output files: ../../../data/opa_sequences_aligned/EEE004_opa_1.aln
+    wildcards: sample=EEE004_opa_1
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:18 2025]
+Finished job 15.
+18 of 120 steps (15%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:42:18 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/GCGS0313_opa_4.fa
+    output: ../../../data/opa_sequences_aligned/GCGS0313_opa_4.aln
+    jobid: 6
+    reason: Missing output files: ../../../data/opa_sequences_aligned/GCGS0313_opa_4.aln
+    wildcards: sample=GCGS0313_opa_4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:52 2025]
+Finished job 11.
+19 of 120 steps (16%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:42:52 2025]
+localrule mafft:
+    input: ../../../data/opa_sequences_collated/CCC020_opa_11.fa
+    output: ../../../data/opa_sequences_aligned/CCC020_opa_11.aln
+    jobid: 64
+    reason: Missing output files: ../../../data/opa_sequences_aligned/CCC020_opa_11.aln
+    wildcards: sample=CCC020_opa_11
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:52 2025]
+Finished job 94.
+20 of 120 steps (17%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:55 2025]
+Finished job 39.
+21 of 120 steps (18%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:57 2025]
+Finished job 65.
+22 of 120 steps (18%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:57 2025]
+Finished job 67.
+23 of 120 steps (19%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:42:58 2025]
+Finished job 95.
+24 of 120 steps (20%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:30 2025]
+Finished job 68.
+25 of 120 steps (21%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:30 2025]
+Finished job 40.
+26 of 120 steps (22%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:32 2025]
+Finished job 2.
+27 of 120 steps (22%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:34 2025]
+Finished job 7.
+28 of 120 steps (23%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:35 2025]
+Finished job 96.
+29 of 120 steps (24%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:43:39 2025]
+Finished job 8.
+30 of 120 steps (25%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:06 2025]
+Finished job 41.
+31 of 120 steps (26%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:09 2025]
+Finished job 69.
+32 of 120 steps (27%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:10 2025]
+Finished job 97.
+33 of 120 steps (28%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:12 2025]
+Finished job 70.
+34 of 120 steps (28%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:12 2025]
+Finished job 9.
+35 of 120 steps (29%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:18 2025]
+Finished job 42.
+36 of 120 steps (30%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:44 2025]
+Finished job 71.
+37 of 120 steps (31%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:47 2025]
+Finished job 98.
+38 of 120 steps (32%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:50 2025]
+Finished job 10.
+39 of 120 steps (32%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:51 2025]
+Finished job 43.
+40 of 120 steps (33%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:51 2025]
+Finished job 99.
+41 of 120 steps (34%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:44:59 2025]
+Finished job 16.
+42 of 120 steps (35%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:45:22 2025]
+Finished job 72.
+43 of 120 steps (36%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:45:26 2025]
+Finished job 17.
+44 of 120 steps (37%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:45:26 2025]
+Finished job 44.
+45 of 120 steps (38%) done
+[Tue Mar 18 11:45:26 2025]
+Finished job 100.
+46 of 120 steps (38%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:45:29 2025]
+Finished job 73.
+47 of 120 steps (39%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:45:37 2025]
+Finished job 45.
+48 of 120 steps (40%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:01 2025]
+Finished job 101.
+49 of 120 steps (41%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:02 2025]
+Finished job 74.
+50 of 120 steps (42%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:03 2025]
+Finished job 46.
+51 of 120 steps (42%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:06 2025]
+Finished job 102.
+52 of 120 steps (43%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:12 2025]
+Finished job 18.
+53 of 120 steps (44%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:18 2025]
+Finished job 19.
+54 of 120 steps (45%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:34 2025]
+Finished job 47.
+55 of 120 steps (46%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:39 2025]
+Finished job 103.
+56 of 120 steps (47%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:39 2025]
+Finished job 75.
+57 of 120 steps (48%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:41 2025]
+Finished job 20.
+58 of 120 steps (48%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:52 2025]
+Finished job 76.
+59 of 120 steps (49%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:46:56 2025]
+Finished job 48.
+60 of 120 steps (50%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:13 2025]
+Finished job 104.
+61 of 120 steps (51%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:15 2025]
+Finished job 77.
+62 of 120 steps (52%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:18 2025]
+Finished job 49.
+63 of 120 steps (52%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:20 2025]
+Finished job 21.
+64 of 120 steps (53%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:34 2025]
+Finished job 105.
+65 of 120 steps (54%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:34 2025]
+Finished job 22.
+66 of 120 steps (55%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:39 2025]
+Finished job 78.
+67 of 120 steps (56%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:54 2025]
+Finished job 106.
+68 of 120 steps (57%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:56 2025]
+Finished job 50.
+69 of 120 steps (57%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:47:56 2025]
+Finished job 79.
+70 of 120 steps (58%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:09 2025]
+Finished job 23.
+71 of 120 steps (59%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:12 2025]
+Finished job 107.
+72 of 120 steps (60%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:21 2025]
+Finished job 51.
+73 of 120 steps (61%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:31 2025]
+Finished job 52.
+74 of 120 steps (62%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:31 2025]
+Finished job 24.
+75 of 120 steps (62%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:31 2025]
+Finished job 80.
+76 of 120 steps (63%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:49 2025]
+Finished job 108.
+77 of 120 steps (64%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:48:50 2025]
+Finished job 25.
+78 of 120 steps (65%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:01 2025]
+Finished job 81.
+79 of 120 steps (66%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:05 2025]
+Finished job 26.
+80 of 120 steps (67%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:06 2025]
+Finished job 53.
+81 of 120 steps (68%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:07 2025]
+Finished job 109.
+82 of 120 steps (68%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:29 2025]
+Finished job 54.
+83 of 120 steps (69%) done
+[Tue Mar 18 11:49:29 2025]
+Finished job 82.
+84 of 120 steps (70%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:42 2025]
+Finished job 55.
+85 of 120 steps (71%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:42 2025]
+Finished job 110.
+86 of 120 steps (72%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:44 2025]
+Finished job 27.
+87 of 120 steps (72%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:49:45 2025]
+Finished job 83.
+88 of 120 steps (73%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:04 2025]
+Finished job 28.
+89 of 120 steps (74%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:04 2025]
+Finished job 111.
+90 of 120 steps (75%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:15 2025]
+Finished job 84.
+91 of 120 steps (76%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:16 2025]
+Finished job 14.
+92 of 120 steps (77%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:19 2025]
+Finished job 56.
+93 of 120 steps (78%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:22 2025]
+Finished job 112.
+94 of 120 steps (78%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:43 2025]
+Finished job 85.
+95 of 120 steps (79%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:46 2025]
+Finished job 29.
+96 of 120 steps (80%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:54 2025]
+Finished job 1.
+97 of 120 steps (81%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:55 2025]
+Finished job 57.
+98 of 120 steps (82%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:50:56 2025]
+Finished job 113.
+99 of 120 steps (82%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:01 2025]
+Finished job 114.
+100 of 120 steps (83%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:21 2025]
+Finished job 93.
+101 of 120 steps (84%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:26 2025]
+Finished job 30.
+102 of 120 steps (85%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:32 2025]
+Finished job 63.
+103 of 120 steps (86%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:33 2025]
+Finished job 119.
+104 of 120 steps (87%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:35 2025]
+Finished job 13.
+105 of 120 steps (88%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:51:39 2025]
+Finished job 66.
+106 of 120 steps (88%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:01 2025]
+Finished job 38.
+107 of 120 steps (89%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:06 2025]
+Finished job 12.
+108 of 120 steps (90%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:08 2025]
+Finished job 35.
+109 of 120 steps (91%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:11 2025]
+Finished job 91.
+110 of 120 steps (92%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:13 2025]
+Finished job 92.
+111 of 120 steps (92%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:19 2025]
+Finished job 36.
+112 of 120 steps (93%) done
+Activating conda environment: ../../../../../../../../../../../../n/home13/qinqinyu/.conda/envs/e2567a912f876d4b0a43b53b260518c9_
+[Tue Mar 18 11:52:40 2025]
+Finished job 59.
+113 of 120 steps (94%) done
+[Tue Mar 18 11:52:42 2025]
+Finished job 3.
+114 of 120 steps (95%) done
+[Tue Mar 18 11:52:47 2025]
+Finished job 34.
+115 of 120 steps (96%) done
+[Tue Mar 18 11:52:48 2025]
+Finished job 90.
+116 of 120 steps (97%) done
+[Tue Mar 18 11:52:49 2025]
+Finished job 37.
+117 of 120 steps (98%) done
+[Tue Mar 18 11:52:51 2025]
+Finished job 6.
+118 of 120 steps (98%) done
+[Tue Mar 18 11:52:56 2025]
+Finished job 64.
+119 of 120 steps (99%) done
+Select jobs to execute...
+
+[Tue Mar 18 11:52:56 2025]
+localrule all:
+    input: ../../../data/opa_sequences_aligned/FA1090_opa_3.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_7.aln, ../../../data/opa_sequences_aligned/FA1090_opa_11.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_9.aln, ../../../data/opa_sequences_aligned/EEE023_opa_9.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_4.aln, ../../../data/opa_sequences_aligned/FFF007_opa_10.aln, ../../../data/opa_sequences_aligned/CCC020_opa_10.aln, ../../../data/opa_sequences_aligned/CCC020_opa_8.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_10.aln, ../../../data/opa_sequences_aligned/FFF007_opa_2.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_4.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_6.aln, ../../../data/opa_sequences_aligned/EEE023_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_9.aln, ../../../data/opa_sequences_aligned/EEE029_opa_9.aln, ../../../data/opa_sequences_aligned/CCC020_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_4.aln, ../../../data/opa_sequences_aligned/EEE029_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_3.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_11.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_5.aln, ../../../data/opa_sequences_aligned/EEE004_opa_5.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_7.aln, ../../../data/opa_sequences_aligned/EEE023_opa_7.aln, ../../../data/opa_sequences_aligned/EEE023_opa_10.aln, ../../../data/opa_sequences_aligned/FFF007_opa_4.aln, ../../../data/opa_sequences_aligned/EEE029_opa_1.aln, ../../../data/opa_sequences_aligned/EEE023_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_3.aln, ../../../data/opa_sequences_aligned/FA1090_opa_10.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_9.aln, ../../../data/opa_sequences_aligned/EEE023_opa_4.aln, ../../../data/opa_sequences_aligned/EEE004_opa_1.aln, ../../../data/opa_sequences_aligned/CCC020_opa_9.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_9.aln, ../../../data/opa_sequences_aligned/EEE004_opa_9.aln, ../../../data/opa_sequences_aligned/FA1090_opa_9.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_10.aln, ../../../data/opa_sequences_aligned/FA1090_opa_8.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_11.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_6.aln, ../../../data/opa_sequences_aligned/FA1090_opa_5.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_1.aln, ../../../data/opa_sequences_aligned/EEE029_opa_4.aln, ../../../data/opa_sequences_aligned/EEE004_opa_2.aln, ../../../data/opa_sequences_aligned/EEE004_opa_3.aln, ../../../data/opa_sequences_aligned/EEE004_opa_8.aln, ../../../data/opa_sequences_aligned/EEE023_opa_1.aln, ../../../data/opa_sequences_aligned/CCC020_opa_3.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_11.aln, ../../../data/opa_sequences_aligned/EEE029_opa_8.aln, ../../../data/opa_sequences_aligned/FFF007_opa_9.aln, ../../../data/opa_sequences_aligned/FA1090_opa_2.aln, ../../../data/opa_sequences_aligned/FA1090_opa_1.aln, ../../../data/opa_sequences_aligned/FFF007_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_2.aln, ../../../data/opa_sequences_aligned/FA1090_opa_6.aln, ../../../data/opa_sequences_aligned/CCC020_opa_11.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_9.aln, ../../../data/opa_sequences_aligned/EEE004_opa_7.aln, ../../../data/opa_sequences_aligned/FFF007_opa_5.aln, ../../../data/opa_sequences_aligned/FA1090_opa_4.aln, ../../../data/opa_sequences_aligned/EEE023_opa_11.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_8.aln, ../../../data/opa_sequences_aligned/EEE029_opa_11.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_6.aln, ../../../data/opa_sequences_aligned/EEE004_opa_10.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_5.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_8.aln, ../../../data/opa_sequences_aligned/FFF007_opa_11.aln, ../../../data/opa_sequences_aligned/CCC020_opa_5.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_1.aln, ../../../data/opa_sequences_aligned/FFF007_opa_8.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_2.aln, ../../../data/opa_sequences_aligned/EEE004_opa_4.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_3.aln, ../../../data/opa_sequences_aligned/FFF007_opa_1.aln, ../../../data/opa_sequences_aligned/CCC020_opa_4.aln, ../../../data/opa_sequences_aligned/FFF007_opa_7.aln, ../../../data/opa_sequences_aligned/EEE023_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_10.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_3.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_4.aln, ../../../data/opa_sequences_aligned/CCC020_opa_7.aln, ../../../data/opa_sequences_aligned/EEE023_opa_3.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_2.aln, ../../../data/opa_sequences_aligned/CCC020_opa_2.aln, ../../../data/opa_sequences_aligned/FA1090_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_2.aln, ../../../data/opa_sequences_aligned/EEE004_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_8.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_3.aln, ../../../data/opa_sequences_aligned/EEE023_opa_6.aln, ../../../data/opa_sequences_aligned/EEE029_opa_3.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_5.aln, ../../../data/opa_sequences_aligned/EEE004_opa_11.aln, ../../../data/opa_sequences_aligned/CCC020_opa_6.aln, ../../../data/opa_sequences_aligned/EEE029_opa_7.aln, ../../../data/opa_sequences_aligned/EEE029_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_7.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_1.aln, ../../../data/opa_sequences_aligned/EEE029_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_10.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_8.aln, ../../../data/opa_sequences_aligned/EEE029_opa_10.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_4.aln, ../../../data/opa_sequences_aligned/FFF007_opa_3.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_7.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_10.aln
+    jobid: 0
+    reason: Input files updated by another job: ../../../data/opa_sequences_aligned/GCGS0431_opa_1.aln, ../../../data/opa_sequences_aligned/CCC020_opa_11.aln, ../../../data/opa_sequences_aligned/EEE004_opa_10.aln, ../../../data/opa_sequences_aligned/EEE004_opa_1.aln, ../../../data/opa_sequences_aligned/EEE029_opa_2.aln, ../../../data/opa_sequences_aligned/FFF007_opa_3.aln, ../../../data/opa_sequences_aligned/CCC020_opa_2.aln, ../../../data/opa_sequences_aligned/EEE029_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_8.aln, ../../../data/opa_sequences_aligned/EEE023_opa_1.aln, ../../../data/opa_sequences_aligned/EEE004_opa_3.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_10.aln, ../../../data/opa_sequences_aligned/CCC020_opa_10.aln, ../../../data/opa_sequences_aligned/EEE029_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_2.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_2.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_6.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_3.aln, ../../../data/opa_sequences_aligned/FFF007_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_4.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_4.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_7.aln, ../../../data/opa_sequences_aligned/EEE029_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_9.aln, ../../../data/opa_sequences_aligned/EEE004_opa_11.aln, ../../../data/opa_sequences_aligned/EEE004_opa_4.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_1.aln, ../../../data/opa_sequences_aligned/EEE023_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_6.aln, ../../../data/opa_sequences_aligned/FA1090_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_6.aln, ../../../data/opa_sequences_aligned/EEE023_opa_2.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_4.aln, ../../../data/opa_sequences_aligned/EEE004_opa_8.aln, ../../../data/opa_sequences_aligned/FFF007_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_5.aln, ../../../data/opa_sequences_aligned/FA1090_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_2.aln, ../../../data/opa_sequences_aligned/EEE023_opa_8.aln, ../../../data/opa_sequences_aligned/EEE004_opa_5.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_10.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_8.aln, ../../../data/opa_sequences_aligned/EEE023_opa_9.aln, ../../../data/opa_sequences_aligned/EEE029_opa_4.aln, ../../../data/opa_sequences_aligned/EEE029_opa_11.aln, ../../../data/opa_sequences_aligned/FA1090_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_11.aln, ../../../data/opa_sequences_aligned/EEE023_opa_6.aln, ../../../data/opa_sequences_aligned/CCC020_opa_8.aln, ../../../data/opa_sequences_aligned/FA1090_opa_9.aln, ../../../data/opa_sequences_aligned/EEE023_opa_5.aln, ../../../data/opa_sequences_aligned/FA1090_opa_4.aln, ../../../data/opa_sequences_aligned/EEE029_opa_9.aln, ../../../data/opa_sequences_aligned/EEE023_opa_10.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_4.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_10.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_10.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_7.aln, ../../../data/opa_sequences_aligned/CCC020_opa_6.aln, ../../../data/opa_sequences_aligned/FFF007_opa_5.aln, ../../../data/opa_sequences_aligned/EEE029_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_10.aln, ../../../data/opa_sequences_aligned/EEE023_opa_4.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_9.aln, ../../../data/opa_sequences_aligned/FA1090_opa_10.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_8.aln, ../../../data/opa_sequences_aligned/FFF007_opa_11.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_1.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_9.aln, ../../../data/opa_sequences_aligned/FFF007_opa_1.aln, ../../../data/opa_sequences_aligned/EEE029_opa_3.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_4.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_9.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_7.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_11.aln, ../../../data/opa_sequences_aligned/FA1090_opa_3.aln, ../../../data/opa_sequences_aligned/CCC020_opa_1.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_1.aln, ../../../data/opa_sequences_aligned/EEE023_opa_3.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_11.aln, ../../../data/opa_sequences_aligned/EEE004_opa_7.aln, ../../../data/opa_sequences_aligned/EEE023_opa_11.aln, ../../../data/opa_sequences_aligned/FA1090_opa_11.aln, ../../../data/opa_sequences_aligned/EEE004_opa_9.aln, ../../../data/opa_sequences_aligned/FFF007_opa_10.aln, ../../../data/opa_sequences_aligned/CCC020_opa_9.aln, ../../../data/opa_sequences_aligned/EEE029_opa_6.aln, ../../../data/opa_sequences_aligned/FFF007_opa_4.aln, ../../../data/opa_sequences_aligned/CCC020_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_3.aln, ../../../data/opa_sequences_aligned/FA1090_opa_6.aln, ../../../data/opa_sequences_aligned/FFF007_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_3.aln, ../../../data/opa_sequences_aligned/CCC020_opa_4.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_3.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_5.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_5.aln, ../../../data/opa_sequences_aligned/FFF007_opa_8.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_2.aln, ../../../data/opa_sequences_aligned/CCC020_opa_5.aln, ../../../data/opa_sequences_aligned/EEE004_opa_6.aln, ../../../data/opa_sequences_aligned/GCGS0431_opa_3.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_7.aln, ../../../data/opa_sequences_aligned/EEE029_opa_10.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_7.aln, ../../../data/opa_sequences_aligned/GCGS0373_opa_9.aln, ../../../data/opa_sequences_aligned/FA1090_opa_5.aln, ../../../data/opa_sequences_aligned/FA1090_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_1.aln, ../../../data/opa_sequences_aligned/FFF007_opa_9.aln, ../../../data/opa_sequences_aligned/CCC020_opa_3.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_8.aln, ../../../data/opa_sequences_aligned/UMASS-DGI_65_opa_6.aln, ../../../data/opa_sequences_aligned/Ng_188_opa_2.aln, ../../../data/opa_sequences_aligned/EEE004_opa_2.aln, ../../../data/opa_sequences_aligned/GCGS0313_opa_5.aln
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, time=60, partition=serial_requeue
+
+[Tue Mar 18 11:52:56 2025]
+Finished job 0.
+120 of 120 steps (100%) done
+Complete log: .snakemake/log/2025-03-18T114018.218138.snakemake.log
