@@ -1,0 +1,5 @@
+hybrid,86
+nanopore_only,47
+cervix,35
+rectum,35
+pharynx,20
