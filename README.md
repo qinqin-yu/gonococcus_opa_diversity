@@ -6,6 +6,9 @@ QinQin Yu, Tatum D. Mortimer, Sofia Blomqvist, Bailey Bowcutt, David Helekal, Sa
 
 The contents of the repository are described below: 
 
+## complete_genome_assembly
+This directory contains code to assemble complete genomes from long-read Nanopore sequencing data. It also contains code to test the effect of different assembly and polishing methods on the accuracy of *opa* sequences.
+
 ## draft_genome_assembly
 This directory contains code to assemble draft genomes using short-read (Illumina) sequencing data. It also contains code to simulate short reads from complete genomes (to ensure that their draft genomes are assembled in the same way). 
 
