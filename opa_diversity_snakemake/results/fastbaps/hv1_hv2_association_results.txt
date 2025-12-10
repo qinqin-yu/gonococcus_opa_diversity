@@ -1,0 +1,1 @@
+Out of 100 random draws of strains (1 per baps cluster), in 0 draws, the random trace was higher than the actual value.

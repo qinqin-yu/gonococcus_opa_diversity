@@ -1,0 +1,3 @@
+,chromosome,strand,start_cr,stop_cr,start_term,stop_term,start,stop,n_terminus,id,in_frame
+0,NZ_CP039886.1,1,88340.0,88370.0,89033.0,89051.0,88316.0,89050.0,88384.0,ATCC13120_opa_1,0
+1,NZ_CP039886.1,1,1011779.0,1011809.0,1012487.0,1012505.0,1011755.0,1012504.0,1011823.0,ATCC13120_opa_2,0

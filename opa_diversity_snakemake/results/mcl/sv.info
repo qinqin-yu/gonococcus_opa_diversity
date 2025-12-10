@@ -1,0 +1,15 @@
+efficiency=0.59935 massfrac=1.00000 areafrac=0.99324  source=results/mcl/out.sv.mci.I14 clusters=2 max=2352  ctr=2344.1 avg=1180.0 min=8 DGI=2 TWI=0 TWL=2352 sgl=0 qrt=0
+===
+efficiency=0.59935 massfrac=1.00000 areafrac=0.99324  source=results/mcl/out.sv.mci.I20 clusters=2 max=2352  ctr=2344.1 avg=1180.0 min=8 DGI=2 TWI=0 TWL=2352 sgl=0 qrt=0
+===
+efficiency=0.75127 massfrac=0.65953 areafrac=0.43598  source=results/mcl/out.sv.mci.I40 clusters=4 max=1373  ctr=1029.5 avg=590.0 min=8 DGI=4 TWI=0 TWL=1373 sgl=0 qrt=0
+===
+efficiency=0.76432 massfrac=0.61389 areafrac=0.37020  source=results/mcl/out.sv.mci.I60 clusters=5 max=1213  ctr=874.3 avg=472.0 min=8 DGI=5 TWI=0 TWL=1213 sgl=0 qrt=0
+===
+efficiency=0.76270 massfrac=0.57663 areafrac=0.32704  source=results/mcl/out.sv.mci.I80 clusters=6 max=1104  ctr=772.5 avg=393.3 min=8 DGI=5 TWI=1 TWL=669 sgl=0 qrt=0
+===
+efficiency=0.76616 massfrac=0.57124 areafrac=0.31720  source=results/mcl/out.sv.mci.I100 clusters=6 max=1083  ctr=749.3 avg=393.3 min=8 DGI=5 TWI=1 TWL=656 sgl=0 qrt=0
+===
+efficiency=0.76616 massfrac=0.57124 areafrac=0.31720  source=results/mcl/out.sv.mci.I120 clusters=6 max=1083  ctr=749.3 avg=393.3 min=8 DGI=5 TWI=1 TWL=656 sgl=0 qrt=0
+===
+efficiency=0.76716 massfrac=0.57373 areafrac=0.32143  source=results/mcl/out.sv.mci.I140 clusters=6 max=1109  ctr=759.3 avg=393.3 min=8 DGI=5 TWI=1 TWL=630 sgl=0 qrt=0
