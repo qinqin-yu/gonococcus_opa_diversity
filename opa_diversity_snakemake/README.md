@@ -3,11 +3,22 @@ This directory contains the Snakemake pipeline and downstream Jupyter notebooks 
 The Snakemake pipeline is compatible with Snakemake v8+ and conda v24.7.1+. 
 
 ## Installing snakemake
+
+1. Create the environment from the snakemake8.yml file: `conda env create -f environment.yml`
+2. Activate the new environment: `conda activate myenv`
+3. Verify that the new environment was installed correctly: `conda env list` and you should see a list of packages
+
+Note that if instead, you want to do this from scratch, these are the steps:
 1. Make a new environment: `conda create --name snakemake8`
 2. [Install snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html): `mamba create -c conda-forge -c bioconda -n snakemake snakemake=8.25.5` (can alternatively use conda)
 3. [Install `executor-plugin-cluster-generic`](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cluster-generic.html): `mamba install snakemake-executor-plugin-cluster-generic`
 
 ## To run
+Test case on example genomes: 
+1. Submit job using `sbatch start_snakemake.sh` from the main directory. 
+2. Check that everything ran correctly in the `snakemake.err` file (should say "Completed" on the bottom). 
+
+To run the analysis of your own genomes:
 1. Deposit complete genomes into the directory `input_data/complete_genome_assemblies/`.
 2. Submit job using `sbatch start_snakemake.sh` from the main directory.
 
