@@ -15,12 +15,13 @@ Note that if instead, you want to do this from scratch, these are the steps:
 
 ## To run
 To run the test case on example genomes: 
-1. Submit job using `sbatch start_snakemake.sh` from the main directory. 
+1. Submit job using `sbatch start_snakemake_test_datset.sh` from the main directory. 
 2. Check that everything ran correctly in the `snakemake.err` file (should say "Completed" on the bottom). 
 
 To run the analysis of your own genomes:
-1. Deposit complete genomes into the directory `input_data/complete_genome_assemblies/`.
-2. Submit job using `sbatch start_snakemake.sh` from the main directory.
+1. Deposit complete genomes into the directory `input_data/complete_genome_assemblies`.
+2. Deposit the pseudogenomes into `input_data/complete_genome_pseudogenomes/`. You can get the pseudogenomes from short read data using the code in `../draft_genome_assembly/gc_genomics/`. Note that if you only have a complete genome, you can first simulate short reads using the code in `../draft_genome_assembly/simulate_short_reads/`.
+3. Submit job using `sbatch start_snakemake.sh` from the main directory.
 
 ## Subdirectory structure
 
