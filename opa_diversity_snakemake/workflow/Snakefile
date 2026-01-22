@@ -103,13 +103,14 @@ rule all:
         expand("figures/frame/frame_on_by_strain.{figure_format}", figure_format=FIGURE_FORMATS),
         #subtrees.smk
         #expand("results/subtrees/opa_sequences_aligned/subtree_{subtree}_locus_{locus}.aln", subtree=SUBTREES, locus=LOCI),
-        expand("results/subtrees/pseudogenomes/{sample}_subtree_pseudogenome.fasta", sample = SUBTREE_SAMPLES),
-        expand("results/subtrees/gubbins/subtree_{subtree}.filtered_polymorphic_sites.fasta", subtree=SUBTREES),
-        expand("results/subtrees/gubbins/subtree_{subtree}.final_tree.tre", subtree=SUBTREES),
-        expand("results/subtrees/beast/subtree_{subtree}_dates.dat", subtree=SUBTREES),
-        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.fasta", subtree=SUBTREES),
-        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates-subtree_{subtree}_recomb_masked_with_dates.trees", subtree=[4]),
-        expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.log", subtree=[4]),
+        #Note that this is the code for the subtree analysis - only use when the genomes for the subtrees are present
+        #expand("results/subtrees/pseudogenomes/{sample}_subtree_pseudogenome.fasta", sample = SUBTREE_SAMPLES),
+        #expand("results/subtrees/gubbins/subtree_{subtree}.filtered_polymorphic_sites.fasta", subtree=SUBTREES),
+        #expand("results/subtrees/gubbins/subtree_{subtree}.final_tree.tre", subtree=SUBTREES),
+        #expand("results/subtrees/beast/subtree_{subtree}_dates.dat", subtree=SUBTREES),
+        #expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.fasta", subtree=SUBTREES),
+        #expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates-subtree_{subtree}_recomb_masked_with_dates.trees", subtree=[4]),
+        #expand("results/subtrees/beast/subtree_{subtree}_recomb_masked_with_dates.log", subtree=[4]),
         #hypervariable_association.smk
         "results/fastbaps/fastbaps_clusters.csv",
         "results/fastbaps/hv1_hv2_association_results.txt"
