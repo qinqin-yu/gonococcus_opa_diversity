@@ -1,0 +1,20 @@
+SAMPLES, = glob_wildcards("assemblies/{sample}.fa.gz")
+
+localrules: all
+
+rule all:
+    input:
+        expand("outputs/genome/{sample}/submit/receipt.xml", sample=SAMPLES)
+
+rule submit_reads:
+    input: 
+        assembly="assemblies/{sample}.fa.gz",
+        chromosome_list="assemblies/{sample}.txt.gz"
+    output:
+        "outputs/genome/{sample}/submit/receipt.xml"
+    conda:
+        "workflow/envs/ena-webin-cli.yml"
+    shell:
+        """
+        ena-webin-cli -context genome -manifest manifest/{wildcards.sample}.txt -username Webin-73987 -passwordFile resources/grad_lab_webin_password.txt -inputdir assemblies -outputdir outputs -submit
+        """

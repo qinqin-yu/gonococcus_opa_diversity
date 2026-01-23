@@ -1,0 +1,11 @@
+SAMPLE	SAMN22824081
+STUDY	PRJEB106623
+ASSEMBLYNAME	EEE021
+ASSEMBLY_TYPE	clone or isolate
+PROGRAM	Autocycler v0.2.1
+PLATFORM	MinION
+MOLECULETYPE	genomic DNA
+DESCRIPTION	Reads were filtered using Filtlong v0.2.1 to keep the 90% highest quality read bases and reads longer than 1kbp. Genomes were assembled using Autocycler v0.2.1 with 4 read subsets at 25x minimum depth and using the assemblers Canu v2.2, Flye v2.9.5, miniasm v0.3, NECAT v0.0.1, NextDenovo v2.5.2, and Raven v1.8.3 . 
+FASTA	EEE021.fa.gz
+CHROMOSOME_LIST	EEE021.txt.gz
+COVERAGE	119.9

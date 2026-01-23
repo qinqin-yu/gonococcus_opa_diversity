@@ -1,0 +1,4 @@
+1	1	Chromosome
+2	2	Plasmid
+3	3	Plasmid
+4	4	Plasmid

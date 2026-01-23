@@ -1,0 +1,19 @@
+SAMPLES, = glob_wildcards("fastqs/{sample}.fastq.gz")
+
+localrules: all
+
+rule all:
+    input:
+        expand("outputs/reads/{sample}/submit/receipt.xml", sample=SAMPLES)
+
+rule submit_reads:
+    input: 
+        "fastqs/{sample}.fastq.gz"
+    output:
+        "outputs/reads/{sample}/submit/receipt.xml"
+    conda:
+        "workflow/envs/ena-webin-cli.yml"
+    shell:
+        """
+        ena-webin-cli -context reads -manifest manifest/{wildcards.sample}.txt -username Webin-73987 -passwordFile resources/grad_lab_webin_password.txt -inputdir fastqs -outputdir outputs -submit
+        """

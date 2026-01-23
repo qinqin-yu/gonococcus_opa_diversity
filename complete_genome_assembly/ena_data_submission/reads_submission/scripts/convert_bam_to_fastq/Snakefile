@@ -1,0 +1,19 @@
+SAMPLES, = glob_wildcards("bams/{sample}.bam")
+
+localrules: all
+
+rule all:
+    input:
+        expand("fastqs/{sample}.fastq.gz", sample=SAMPLES)
+
+rule bam2fastq:
+    input: 
+        "bams/{sample}.bam"
+    output:
+        "fastqs/{sample}.fastq.gz"
+    conda:
+        "workflow/envs/samtools.yml"
+    shell:
+        """
+        samtools fastq {input} | gzip > {output}
+        """
