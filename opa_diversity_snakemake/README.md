@@ -14,6 +14,9 @@ Note that if instead, you want to do this from scratch, these are the steps:
 3. [Install `executor-plugin-cluster-generic`](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/cluster-generic.html): `mamba install snakemake-executor-plugin-cluster-generic`
 
 ## To run
+
+1. Add executable permissions to slurm-status.py if needed (`chmod +x config/slurm-status.py`)
+
 To run the test case on example genomes: 
 1. Submit job using `sbatch start_snakemake_test_datset.sh` from the main directory. 
 2. Check that everything ran correctly in the `snakemake.err` file (should say "Completed" on the bottom). 
