@@ -15,7 +15,7 @@ Note that if instead, you want to do this from scratch, these are the steps:
 
 ## To run
 
-1. Add executable permissions to slurm-status.py if needed (`chmod +x config/slurm-status.py`)
+1. Add executable permissions if needed (`chmod +x config/slurm-status.py`, chmod +x -R `workflow/scripts/`)
 
 To run the test case on example genomes: 
 1. Submit job using `sbatch start_snakemake_test_datset.sh` from the main directory. 
