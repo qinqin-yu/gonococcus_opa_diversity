@@ -18,10 +18,6 @@ def get_args():
     parser = argparse.ArgumentParser(description='Determine the opa genes within strains that share a threshold sequence identity and plot results')
     parser.add_argument("within_strain_distance_filename", help="Filename of within-strain pairwise distances in csv (input)")
     parser.add_argument("similar_opas_filename", help="Filename of csv with information on similar opas within strains (output)")
-    parser.add_argument("png_similar_by_strain", help="Filename of png of similar opas by strain (output)")
-    parser.add_argument("pdf_similar_by_strain", help="Filename of pdf of similar opas by strain (output)")
-    parser.add_argument("png_vary_thresh", help="Filename of png of percentage of strains with similar opas by similarity threshold (output)")
-    parser.add_argument("pdf_vary_thresh", help="Filename of pdf of percentage of strains with similar opas by similarity threshold (output)")
     return parser.parse_args()
 
 args = get_args()

@@ -2,7 +2,6 @@ name: mauve
 channels:
   - bioconda
   - conda-forge
-  - defaults
   - r
   - nodefaults
 dependencies:

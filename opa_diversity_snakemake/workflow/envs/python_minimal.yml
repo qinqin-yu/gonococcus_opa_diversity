@@ -2,7 +2,6 @@ name: python_minimal
 channels:
   - bioconda
   - conda-forge
-  - defaults
   - r
   - nodefaults
 dependencies:
