@@ -62,16 +62,12 @@ rule similar_opa:
         'results/pairwise_distance/within_strain_pairwise_distance_aa.csv'
     output:
         similar_opas='results/pairwise_distance/within_strain_similar_opa_aa.csv',
-        summary_png='figures/diversity/within_strain_similar_opa_aa.png',
-        summary_pdf='figures/diversity/within_strain_similar_opa_aa.pdf',
-        vary_thresh_png='figures/diversity/within_strain_similar_opa_aa_num_strains.png',
-        vary_thresh_pdf='figures/diversity/within_strain_similar_opa_aa_num_strains.pdf'
     conda:
         "../envs/networkx_plotting.yml"
     shell:
         """
             mkdir -p figures/diversity
-            workflow/scripts/within_strain_similar_opa_aa.py {input} {output.similar_opas} {output.summary_png} {output.summary_pdf} {output.vary_thresh_png} {output.vary_thresh_pdf}
+            workflow/scripts/within_strain_similar_opa_aa.py {input} {output.similar_opas}
         """
 
 rule pseudogenome_distances:
