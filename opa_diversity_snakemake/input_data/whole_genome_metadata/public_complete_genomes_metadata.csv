@@ -1,0 +1,133 @@
+﻿wgs_id,biosample_accession,biosample_collection_date,continent,country,region,assembly_accession,bioproject_accession,release_date,short_read_sequencer,long_read_sequencer,other_sequencer,assembly_method,notes,source,reference,PMID
+10231,SAMN28869504,2017,Europe,Russia,,GCF_025169565.2,PRJNA768989,2022-10-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10239,SAMN28833726,2017,Europe,Russia,,GCF_025790205.1,PRJNA768989,2022-10-21,Illumina MiniSeq,Oxford Nanopore MiniION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10268,SAMN28858863,2017,Europe,Russia,,GCF_025170685.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10272,SAMN28858852,2017,Europe,Russia,Kaluga,GCF_025169515.2,PRJNA768989,2022-10-06,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10296,SAMN28871644,2017,Europe,Russia,,GCF_025171275.1,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10328,SAMN28835919,2017,Europe,Russia,Cheboksary,GCF_025170325.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10500,SAMN22599447,2018,Europe,Russia,Astrakhan,GCF_020882925.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10524,SAMN22599711,2018,Europe,Russia,Arkhangelsk,GCF_020904995.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10529,SAMN28869590,2018,Europe,Russia,,GCF_025169685.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10531,SAMN31014989,2018,Europe,Russia,Arkhangelsk,GCF_025642435.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,note that 2 isolates were resequenced to test for the effect of cell culturing on the sequence and they did not observe differences in synteny,public,Shaskolskiy2022,36555284
+10536,SAMN28859049,2018,Europe,Russia,,GCF_025170705.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10537,SAMN28869552,2018,Europe,Russia,,GCF_025170725.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10538,SAMN28859076,2018,Europe,Russia,,GCF_025562675.2,PRJNA768989,2022-10-04,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10562,SAMN31015000,2018,Europe,Russia,Kaluga,GCF_025642455.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,note that 2 isolates were resequenced to test for the effect of cell culturing on the sequence and they did not observe differences in synteny,public,Shaskolskiy2022,36555284
+10574,SAMN22600672,2018,Europe,Russia,Kaluga,GCF_021193625.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10588,SAMN28830140,2018,Europe,Russia,,GCF_025790185.1,PRJNA768989,2022-10-21,Illumina MiniSeq,Oxford Nanopore MiniION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10610,SAMN22599455,2018,Europe,Russia,Stavropol,GCF_020904955.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10638,SAMN22600315,2018,Europe,Russia,Cheboksary,GCF_020904985.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10702,SAMN22600584,2019,Europe,Russia,Astrakhan,GCF_020906835.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10708,SAMN31014987,2019,Europe,Russia,,GCF_025642415.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10723,SAMN28858607,2019,Europe,Russia,Arkhangelsk,GCF_025641865.1,PRJNA768989,2022-10-10,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10727,SAMN22600590,2019,Europe,Russia,Arkhangelsk,GCF_020905095.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10736,SAMN31014981,2019,Europe,Russia,,GCF_025642395.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10743,SAMN31014963,2019,Europe,Russia,,GCF_025642375.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10744,SAMN31014135,2019,Europe,Russia,,GCF_025642335.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10771,SAMN28869592,2019,Europe,Russia,Omsk,GCF_025171075.1,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10791,SAMN22600892,2019,Europe,Russia,Cheboksary,GCF_020906775.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10792,SAMN28836998,2019,Europe,Russia,Cheboksary,GCF_025170505.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10794,SAMN22600605,2019,Europe,Russia,Cheboksary,GCF_020906765.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10795,SAMN22600608,2019,Europe,Russia,Cheboksary,GCF_020905105.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+1081168,SAMN31165854,2014,Europe,Italy,,GCF_025790925.1,PRJNA887340,2022-10-22,Illumina,Oxford Nanopore,,Unicycler v. 0.4.8,,public,,
+10814,SAMN28834904,2019,Europe,Russia,,GCF_025169475.1,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+10819,SAMN31014148,2019,Europe,Russia,,GCF_025642355.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+1123850,SAMN31165853,2014,Asia,Taiwan,,GCF_025790945.1,PRJNA887340,2022-10-22,Illumina,Oxford Nanopore,,Unicycler v. 0.4.8,,public,,
+1130991,SAMN31165852,2014,Europe,Belgium,,GCF_025790965.1,PRJNA887340,2022-10-22,Illumina,Oxford Nanopore,,Unicycler v. 0.4.8,,public,,
+1145734,SAMN31165850,2014,South America,Chile,,GCF_025791005.1,PRJNA887340,2022-10-22,Illumina,Oxford Nanopore,,Unicycler v. 0.4.8,,public,,
+20181204,SAMN17393045,2018,Oceania,Australia,,GCF_016775785.1,PRJNA693638,2021-02-01,Illumina NextSeq,Oxford Nanopore GridION,,Unicycler v. v0.4.9b,,public,,
+9035,SAMN28859053,2015,Europe,Russia,,GCF_025562635.2,PRJNA768989,2022-10-04,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9071,SAMN28871636,2015,Europe,Russia,,GCF_025169825.2,PRJNA768989,2022-10-06,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9112,SAMN28869553,2015,Europe,Russia,,GCF_025169605.2,PRJNA768989,2022-10-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9126,SAMN28871698,2015,Europe,Russia,Penza,GCF_025171295.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9343,SAMN28871700,2016,Europe,Russia,,GCF_025171315.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9399,SAMN28859080,2016,Europe,Russia,Omsk,GCF_025169495.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9431,SAMN31014998,2016,Europe,Russia,,GCF_025642475.1,PRJNA768989,2022-10-11,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9460,SAMN28835168,2016,Europe,Russia,,GCF_025169585.1,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+9464,SAMN28871631,2016,Europe,Russia,,GCF_025169745.2,PRJNA768989,2022-10-05,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+AT159,SAMN28560617,2022-04,Europe,Austria,,GCF_023822665.1,PRJNA839941,2022-06-21,Illumina NextSeq,Oxford Nanopore MinION,,Unicycler v. 0.4.7,,public,Golparian2022,36005764
+ATCC49226,SAMN28870224,2020,Europe,Russia,,GCF_025171215.2,PRJNA768989,2022-09-13,Illumina MiniSeq,Oxford Nanopore MinION R9 and R10,,Unicycler v. 0.4.8,,public,Shaskolskiy2022,36555284
+AUSMDU00010541,SAMN10920452,2017,Oceania,Australia,,GCF_009650075.1,PRJNA556438,2019-11-12,Illumina NextSeq,PacBio RSII,,Unicycler v. 0.4.6,,public,Baines2020,33180013
+BJ16148,SAMN14433815,2016-07,Asia,China,Beijing,GCF_014700555.1,PRJNA614605,2020-09-22,Illumina HiSeq,PacBio RSII,,Falcon v. 0.3,First FC428 clone in China,public,"Chen2019,Chen2020",30900979
+CT213,SAMN14131123,2010-01-15,Asia,Thailand,Bangkok,GCF_019380275.1,PRJNA607374,2021-07-28,Illumina NovaSeq,Oxford Nanopore MinION,,Unicycler v. 0.4.4,,public,Nokchan2021,34913715
+CT530,SAMN13812694,2015-12-19,Asia,Thailand,Bangkok,GCF_023611785.1,PRJNA600334,2022-05-31,Illumina NovaSeq,Oxford Nanopore MinION R9.4,,Unicycler v. 0.4.4,,public,Nokchan2022,35905043
+CT532,SAMN13812695,2015-12-22,Asia,Thailand,Bangkok,GCF_023611765.1,PRJNA600334,2022-05-31,Illumina NovaSeq,Oxford Nanopore MinION R9.4,,Unicycler v. 0.4.4,,public,Nokchan2022,35905043
+CT602,SAMN13812696,2017-07-04,Asia,Thailand,Bangkok,GCF_023611705.1,PRJNA600334,2022-05-31,Illumina NovaSeq,Oxford Nanopore MinION R9.4,,Unicycler v. 0.4.4,,public,Nokchan2022,35905043
+FDAARGOS_204,SAMN04875541,,North America,USA,Wisconsin,GCF_002073535.2,PRJNA231221,2017-03-29,Illumina HiSeq,PacBio RSII,,HGAP v. 3.0,,public,Sichtig2019,31346170
+FDAARGOS_205,SAMN04875542,,North America,USA,Virginia,GCF_002073615.2,PRJNA231221,2017-03-29,Illumina HiSeq,PacBio RSII,,HGAP v. 3.0,,public,Sichtig2019,31346170
+FDAARGOS_207,SAMN04875544,1983,North America,USA,North Carolina,GCF_002073655.2,PRJNA231221,2017-03-29,Illumina HiSeq,PacBio RSII,,HGAP v. 3.0,,public,Sichtig2019,31346170
+FQ01,SAMN10395998,2014-01-01,North America,USA,Los Angeles,GCF_003855435.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ02,SAMN10395999,2014-01-01,North America,USA,Los Angeles,GCF_003855375.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ04,SAMN10396000,2014-01-01,North America,USA,Los Angeles,GCF_003855235.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ20,SAMN10396003,2014-01-01,North America,USA,Los Angeles,GCF_003855355.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ35,SAMN10395917,2014-01-01,North America,USA,Los Angeles,GCF_003855295.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ36,SAMN10395916,2014-01-01,North America,USA,Los Angeles,GCF_003855195.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ48,SAMN10395915,2012-01-01,North America,USA,Los Angeles,GCF_003855215.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ82,SAMN10395914,2013-01-01,North America,USA,Los Angeles,GCF_003855415.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+FQ84,SAMN10395918,2013-01-01,North America,USA,Los Angeles,GCF_003855175.1,PRJNA504608,2018-12-02,Illumina MiSeq,Oxford Nanopore MinION,,"Unicycler v. 0.4.7, Pilon v. 1.22",,public,White2019,30834380
+H035,SAMN31203372,2000,Asia,Japan,,GCF_025758415.1,PRJNA887939,2022-10-19,Illumina NextSeq,Oxford Nanopore MinION R10.4,,Unicycler v. 0.4.7,,public,Golparian2023,36853044
+NG196,SAMN12676038,2009-05-07,Asia,Thailand,Bangkok,GCF_011058675.1,PRJNA563548,2020-03-03,Illumina HiSeq,Oxford Nanopore MinION R9.4.1,,Unicycler v. 0.4.4,,public,Cherdtrakulkiat2020,32381609
+NG250,SAMN13151449,2010-07-20,Asia,Thailand,Bangkok,GCF_018798905.1,PRJNA609415,2021-06-09,Illumina HiSeq,Oxford Nanopore MinION R9.4.1,,Unicycler v. 0.4.4,,public,Cherdtrakulkiat2021,34647806
+NG251,SAMN12676039,2010-07-30,Asia,Thailand,Bangkok,GCF_011058655.1,PRJNA563548,2020-03-03,Illumina HiSeq,Oxford Nanopore MinION R9.4.1,,Unicycler v. 0.4.4,,public,Cherdtrakulkiat2020,32381609
+NG290,SAMN12676040,2011-06-18,Asia,Thailand,Bangkok,GCF_011058635.1,PRJNA563548,2020-03-03,Illumina HiSeq,Oxford Nanopore MinION R9.4.1,,Unicycler v. 0.4.4,,public,Cherdtrakulkiat2020,32381609
+RIVM0610,SAMN06251593,2008,Europe,Netherlands,Bilthoven,GCF_003571445.1,PRJNA362986,2017-08-02,Illumina,PacBio,,CLC Genomics Workbench v. 9.5.3,,public,,
+RIVM0640,SAMN06251594,2008,Europe,Netherlands,Bilthoven,GCF_003571465.1,PRJNA362986,2017-08-02,Illumina,PacBio,,CLC Genomics Workbench v. 9.5.3,,public,,
+SE690,SAMN32765978,2022,Europe,Sweden,,GCF_028483175.2,PRJNA924675,2023-02-06,Illumina MiSeq,Oxford Nanopore MinION,,Unicycler v. 0.5.0,,public,Golparian2023,36892469
+SRRSH203,SAMN14116987,2019-07-24,Asia,China,Hangzhou,GCF_016802445.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH204,SAMN14116988,2019-07-25,Asia,China,Hangzhou,GCF_016802425.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH205,SAMN14116989,2019-08-19,Asia,China,Hangzhou,GCF_016802405.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH207,SAMN14116990,2019-08-20,Asia,China,Hangzhou,GCF_016802385.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH214,SAMN14116991,2019-05-14,Asia,China,Hangzhou,GCF_016802355.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH229,SAMN14116992,2019-07-22,Asia,China,Hangzhou,GCF_016802335.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,,public,Yan2021,33406237
+SRRSH240,SAMN14117309,2019-10-04,Asia,China,Hangzhou,GCF_016802315.1,PRJNA606927,2021-02-02,Illumina,Oxford Nanopore,,,Schaalia turicensis was also isolated from this patient,public,Yan2021,33406237
+SS3160,SAMD00179626,2017,Asia,Japan,Tokyo,GCF_008065015.2,PRJDB8572,2019-07-31,Illumina MiSeq,Oxford Nanopore MinION R9.4,,Unicycler v. 0.4.8,,public,Miyake2020,32972945
+TFG-A2,SAMN10035124,2011-07,Oceania,Australia,New South Wales,GCF_004332535.2,PRJNA451379,2019-03-08,Illumina NextSeq,PacBio RSII,,"HGAP v. 3.0, Pilon",TFG-A2 was a post-treatment isolate from a treatment failure associated with ceftriaxone monotherapy (Case 2),public,Buckley2019,31481151
+TFG-B2,SAMN10031335,2011-03,Oceania,Australia,New South Wales,GCF_004332555.2,PRJNA451380,2019-03-08,Illumina NextSeq,PacBio RSII,,"HGAP v. 3.0, Pilon",TFG-B2 was a post-treatment isolate from a treatment failure associated with ceftriaxone monotherapy (Case 1),public,Buckley2019,31481151
+TUM15748,SAMD00220608,2013-05-27,Asia,Japan,,GCF_013030095.1,PRJDB9563,2020-05-01,Illumina MiSeq,Oxford Nanopore MinION R9.4,,"Unicycler v.0.4.8-beta, pilon v1.22",,public,Hanao2021,33930160
+TUM16691,SAMD00220610,,,,,GCF_013030135.1,PRJDB9563,2020-05-01,Illumina MiSeq,Oxford Nanopore MinION R9.4,,"Unicycler v.0.4.8-beta, pilon v1.22","no metadata in paper, potentially collected and sequenced in another study (NG9807, but the reference that is not cited, PMID 21576437, does not state the source of this strain)",public,Hanao2021,33930160
+2022NG-0076,SAMN33482240,2022,North America,USA,,GCF_029378435.1,PRJNA812922,2023-03-24,Illumina MiSeq,Oxford Nanopore,,Trycycler v. v0.5.3,,public,,
+2022NG-0032,SAMN33482239,2020,North America,USA,,GCF_029378455.1,PRJNA812922,2023-03-24,Illumina MiSeq,Oxford Nanopore,,Trycycler v. v0.5.3,,public,,
+TH2288,SAMN38152951,2023,Asia,Thailand,,GCF_033798605.1,PRJNA1036832,2023-11-18,Illumina,Oxford Nanopore,,Unicycler v. 0.4.7,,public,Sangprasert2024,38299807
+TH1713,SAMN38152950,2023,Asia,Thailand,,GCF_033798625.1,PRJNA1036832,2023-11-18,Illumina,Oxford Nanopore,,Unicycler v. 0.4.7,,public,Sangprasert2024,38299807
+2020C08-294,SAMN36766274,2020,Asia,Taiwan,,GCF_038420435.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2020N08-318,SAMN36766273,2020,Asia,Taiwan,,GCF_038420465.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2020N07-265,SAMN36766272,2020,Asia,Taiwan,,GCF_038420475.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2020S05-258,SAMN36766271,2020,Asia,Taiwan,,GCF_038420605.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2018C07-301,SAMN36766270,2018,Asia,Taiwan,,GCF_038421315.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2018S05-288,SAMN36766269,2018,Asia,Taiwan,,GCF_038422155.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2016E02-233,SAMN36766268,2016,Asia,Taiwan,,GCF_038423385.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2014E02-242,SAMN36766267,2014,Asia,Taiwan,,GCF_038424135.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2010C02-038,SAMN36766266,2010,Asia,Taiwan,,GCF_038424905.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+2004S05-027,SAMN36766265,2004,Asia,Taiwan,,GCF_038425775.1,PRJNA1000275,2024-04-24,Illumina iSeq,Oxford Nanopore MinION,,CCBGpipe v. 1,,public,Wu2025,39979452
+WHO_Z_2024,SAMN39556062,2013,Oceania,Australia,,GCF_040366825.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_Y_2024,SAMN39556061,2010,Europe,France,,GCF_040367275.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_X_2024,SAMN39556060,2009,Asia,Japan,,GCF_040368535.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_V_2024,SAMN39556059,2012,Europe,Sweden,,GCF_040369685.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_U_2024,SAMN39556058,2011,Europe,Sweden,,GCF_040370845.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_S2_2024,SAMN39556057,2020,Europe,Sweden,,GCF_040371445.1,PRJNA1067895,2024-06-28,Illumina,Oxford Nanopore MinION,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_R_2024,SAMN39556056,2015,Asia,Japan,,GCF_040372445.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_Q_2024,SAMN39556055,2018,Europe,United Kingdom,,GCF_040373035.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_P_2024,SAMN39556054,,North America,USA,,GCF_040373105.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_O_2024,SAMN39556053,1991,North America,Canada,,GCF_040373215.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_M_2024,SAMN39556052,1992,Asia,Phillipines,,GCF_040373345.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_L_2024,SAMN39556051,1996,Asia,,,GCF_040374935.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_K_2024,SAMN39556050,2003,Asia,Japan,,GCF_040377535.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_H_2024,SAMN39556049,2011,Oceania,Australia,,GCF_040380425.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_F_2024,SAMN39556048,1991,North America,Canada,,GCF_040383235.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_beta_2024,SAMN39556047,,,,,GCF_040385865.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_alpha_2024,SAMN39556046,,,,,GCF_040388595.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_W_2024,SAMN39556045,2007,Asia,Hong Kong,,GCF_040391575.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_T_2024,SAMN39556044,,,,,GCF_040394165.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_S_2024,SAMN39556043,,,,,GCF_040397295.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_N_2024,SAMN39556042,2001,Oceania,Australia,,GCF_040400385.1,PRJNA1067895,2024-06-28,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_J_2024,SAMN39556041,,,,,GCF_040403735.1,PRJNA1067895,2024-06-28,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_I_2024,SAMN39556040,,,,,GCF_040404325.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_G_2024,SAMN39556039,1997,Asia,Thailand,,GCF_040404335.1,PRJNA1067895,2024-06-29,Illumina,PacBio RS,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_E_2024,SAMN39556038,,,,,GCF_040404365.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_D_2024,SAMN39556037,,,,,GCF_040404415.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_C_2024,SAMN39556036,,,,,GCF_040404485.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_B_2024,SAMN39556035,,,,,GCF_040404575.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+WHO_A_2024,SAMN39556034,,,,,GCF_040404645.1,PRJNA1067895,2024-06-29,Illumina,PacBio Sequel,,Unicycler v. 0.5.0,,public,Unemo2024,38889110
+NCTC8375,SAMN44604098,2007-11-23,Europe,Spain,Granada,GCF_044880535.1,PRJNA1182738,2024-11-20,Illumina MiSeq,Oxford Nanopore GridION,,Flye v. 2.9.2,,public,,
+SAMEA116302675,SAMEA116302675,2024,Europe,United Kingdom,,GCF_964291735.1,PRJEB73456,2024-10-30,Illumina NextSeq 2000,Oxford Nanopore GridION ,,Flye,,public,McHugh2025,40050018
+SAMEA116302676,SAMEA116302676,2024,Europe,United Kingdom,,GCF_964291745.1,PRJEB73456,2024-10-30,Illumina NextSeq 2000,Oxford Nanopore GridION ,,Flye,,public,McHugh2025,40050018
