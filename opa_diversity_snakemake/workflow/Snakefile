@@ -1,5 +1,6 @@
 import pandas as pd
 
+# Edit the path to your scratch directory here (or where you run your code)
 SCRATCH = "/n/netscratch/grad_lab/Lab/qinqinyu/20250211_opa_diversity_snakemake"
 
 SAMPLES_LAB, = glob_wildcards("input_data/complete_genome_assemblies/grad_lab/{sample}.fa")
