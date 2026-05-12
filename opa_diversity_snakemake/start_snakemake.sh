@@ -9,4 +9,5 @@
 #SBATCH -e snakemake.err
 #SBATCH --account=grad_lab
 
+export PYTHONNOUSERSITE=1 #Tells snakemake not to use local version of Python (if there is one)
 snakemake -k --profile config --latency-wait 10 --omit-from gubbins_representative_and_complete_genomes subtree_gubbins --cores 12
