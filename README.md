@@ -2,7 +2,7 @@
 
 This repository contains the code to reproduce the analysis in:
 
-QinQin Yu, Tatum D. Mortimer, Sofia Blomqvist, Bailey Bowcutt, David Helekal, Samantha G. Palace, Yonatan H. Grad.  Diversity and evolution of a phase-variable multi-locus antigen in *Neisseria gonorrhoeae*.
+QinQin Yu, Tatum D. Mortimer, Sofia Blomqvist, Bailey Bowcutt, David Helekal, Samantha G. Palace, Yonatan H. Grad.  Diversity and evolution of a phase-variable multi-locus antigen in *Neisseria gonorrhoeae*. bioRxiv. 2026. https://www.biorxiv.org/content/10.64898/2026.02.02.703239v2.
 
 The contents of the repository are described below: 
 
