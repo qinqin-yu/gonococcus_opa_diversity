@@ -18,15 +18,18 @@ Note that if instead, you want to do this from scratch, these are the steps:
 1. Add executable permissions to scripts (`chmod +x config/slurm-status.py`, `chmod +x -R workflow/scripts/`)
 
 To run the test case on example genomes: 
-1. Update the path to your scratch directory (or whereever you run your code from) in line 4 of the Snakefile (`workflow/Snakefile`). Note that you may want to specify a subdirectory to keep the files organized. This subdirectory will automatically be created when running the pipeline. 
+1. Update the path to your scratch directory (or wherever you run your code from) in line 4 of the Snakefile (`workflow/Snakefile`). Note that you may want to specify a subdirectory to keep the files organized. This subdirectory will automatically be created when running the pipeline. 
 2. Submit job using `sbatch start_snakemake_test_datset.sh` from the main directory. 
 3. Check that everything ran correctly in the `snakemake.err` file (should say "Completed" on the bottom). 
 
 To run the analysis of your own genomes:
 1. Deposit complete genomes into the directory `input_data/complete_genome_assemblies`.
 2. Deposit the pseudogenomes into `input_data/complete_genome_pseudogenomes/`. You can get the pseudogenomes from short read data using the code in `../draft_genome_assembly/gc_genomics/`. Note that if you only have a complete genome, you can first simulate short reads using the code in `../draft_genome_assembly/simulate_short_reads/`.
-3. Update the path to your scratch directory (or whereever you run your code from) in line 4 of the Snakefile (`workflow/Snakefile`). Note that you may want to specify a subdirectory to keep the files organized. This subdirectory will automatically be created when running the pipeline. 
+3. Update the path to your scratch directory (or wherever you run your code from) in line 4 of the Snakefile (`workflow/Snakefile`). Note that you may want to specify a subdirectory to keep the files organized. This subdirectory will automatically be created when running the pipeline. 
 4. Submit job using `sbatch start_snakemake.sh` from the main directory.
+
+## Troubleshooting
+If you run into issues with the conda installations within Snakemake, it has occasionally worked for us to copy the code to a new location and start the pipeline again. 
 
 ## Subdirectory structure
 
