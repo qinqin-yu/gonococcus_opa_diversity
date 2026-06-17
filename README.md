@@ -2,18 +2,18 @@
 
 This repository contains the code to reproduce the analysis in:
 
-QinQin Yu, Tatum D. Mortimer, Sofia Blomqvist, Bailey Bowcutt, David Helekal, Samantha G. Palace, Yonatan H. Grad.  Diversity and evolution of a phase-variable multi-locus antigen in *Neisseria gonorrhoeae*. bioRxiv. 2026. https://www.biorxiv.org/content/10.64898/2026.02.02.703239v2.
+QinQin Yu, Tatum D. Mortimer, Sofia Blomqvist, Bailey Bowcutt, David Helekal, Samantha G. Palace, Yonatan H. Grad.  Diversity and evolution of a phase-variable multi-locus antigen in *Neisseria gonorrhoeae*, PloS Pathogens (2026), https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1013962.
 
 The contents of the repository are described below: 
 
-## complete_genome_assembly
+## [complete_genome_assembly](https://github.com/qinqin-yu/gonococcus_opa_diversity/tree/main/complete_genome_assembly)
 This directory contains code to assemble complete genomes from long-read Nanopore sequencing data. It also contains code to test the effect of different assembly and polishing methods on the accuracy of *opa* sequences.
 
-## draft_genome_assembly
+## [draft_genome_assembly](https://github.com/qinqin-yu/gonococcus_opa_diversity/tree/main/draft_genome_assembly)
 This directory contains code to assemble draft genomes using short-read (Illumina) sequencing data. It also contains code to simulate short reads from complete genomes (to ensure that their draft genomes are assembled in the same way). 
 
-## isolate_selection_for_sequencing
+## [isolate_selection_for_sequencing](https://github.com/qinqin-yu/gonococcus_opa_diversity/tree/main/isolate_selection_for_sequencing)
 This directory contains the code, data, and figures for determining the isolates selected for Nanopore sequencing. The isolates were selected from across the *N. gonorrhoeae* phylogeny after accounting for the diversity that is represented in the publicly available complete genomes.
 
-## opa_diversity_snakemake
+## [opa_diversity_snakemake](https://github.com/qinqin-yu/gonococcus_opa_diversity/tree/main/opa_diversity_snakemake)
 This directory contains the Snakemake pipeline to run the main analysis for the paper assessing *opa* diversity, phase, and evolution. More details about the contents of the pipeline and how to run it are in the README file in that directory. 
